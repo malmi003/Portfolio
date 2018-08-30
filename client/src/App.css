@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/* Colors
+almond white: rgba(240, 222, 200, 1);
+pastel brown: rgba(115, 103, 88, 1);
+black coral: rgba(84, 95, 111, 1);
+fern green: rgba(97, 114, 67, 1);
+gray-asparagus: rgba(59, 94, 72, 1);
+*/
+
+/* ----------------------------- GLOBAL ------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  color: rgba(84, 95, 111, 1);
+  /* font-family: 'Tajawal', sans-serif; */
+  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Amatic SC', cursive; */
+  margin-bottom: 60px; /* Margin bottom by footer height */
+}
+a {
+  color: rgba(84, 95, 111, 1);
+}
+a:hover {
+  color: #3E4651; /* charcoal */
+}
+/* ------------------------- HEADER AND FOOTER---------------------- */
+/*................header................*/
+.pageHeader {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 3rem;
+}
+.bg-primary {
+  background: rgba(84, 95, 111, .8) !important;
+}
+.navbar {
+  background: rgba(97, 114, 67, .7);
+}
+.navbar a {
+  margin-bottom: 2em;
+  color: rgba(240, 222, 200, 1) !important;
+}
+/*................footer................*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  color: rgba(240, 222, 200, 1) !important;
+}
+.footer p {
+  margin-bottom: 0;
+}
+
+/* ---------------------------------MAIN---------------------------- */
+/*................general................*/
+.active {
+  text-decoration: underline;
+}
+.jumbotron {
+  /* Background Photo by Matthew Smith on Unsplash */
+  background: linear-gradient(0deg,rgba(84, 95, 111, .6),rgba(115, 103, 88, .6)), url("https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5b1016b885e7438c4633109d77368d4d&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb");
+  background-size: cover;
+  color: rgba(240, 222, 200, 1);
+  text-align: center;
+}
+
+.border-primary {
+  border-width: 1px !important;
+  border-color: #363D47 !important;
+}
+.border-secondary {
+  border-width: 2px !important;
+  border-color: rgba(115, 103, 88, 1) !important;
+}
+.btn-primary {
+  background-color: rgba(59, 94, 72, 1);
+  border-color: rgba(59, 94, 72, 1);
+}
+.btn-primary:active {
+  background-color: rgba(59, 94, 72, .8) !important;
+  border-color: rgba(59, 94, 72, .8) !important;
+}
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(59, 94, 72, 1) !important;
+}
+.btn-primary:hover {
+  background-color: rgba(59, 94, 72, .9) !important;
+  border-color: rgba(59, 94, 72, .9) !important;
+}
+
+.hover-box {
+  
+}
+
+/*................portfolio................*/
+
+.portfolio-body {
+  background: linear-gradient(0deg,rgba(253, 252, 250, .75), rgba(253, 252, 250, .75)), url("https://images.unsplash.com/photo-1494807081385-2193b6e24400?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c88e19c314d7f5495bc3b21b4f0538dd&auto=format&fit=crop&w=500&q=60");
+  color: rgba(240, 222, 200, 1);
+  text-align: center;
+}
+#portfolio-header {
+  color: rgba(84, 95, 111, 1);
+}
+
+/*................about................*/
+/*................contain................*/
+
+
+@media (min-width: 768px) {
+  .jumbotron {
+      padding: 10rem 2rem !important;
+  }
+}
