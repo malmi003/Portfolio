@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "server.js",
+  "homepage" : "http://malmi003.github.io/Portfolio",
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
