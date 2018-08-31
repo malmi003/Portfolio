@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "server.js",
-  "homepage" : "http://malmi003.github.io/Portfolio",
+  "homepage": "http://malmi003.github.io/Portfolio",
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
+    "gh-pages": "^1.2.0",
     "nodemon": "^1.11.0"
   },
   "scripts": {
@@ -22,6 +23,8 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
