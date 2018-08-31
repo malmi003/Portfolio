@@ -18,7 +18,7 @@ class Portfolio extends Component {
                         imageSrc="./images/Hangperson.png"
                         externalCodeLink="https://github.com/malmi003/Word-Guess-Game"
                         codeTitle="Word Guess Game Code"
-                        description="ksjdvckjsr nvjab erhcabwe chbacbnvbdfvbj abnvawbevna wbevcawvech jabecamncja ncjab vhber vhabwe cbawe,jhcb"
+                        description="Similar to other hangperson games, the objective of this game is to guess the correct term, one letter at a time, before your number of guesses runs out."
                     />
                     <PortfolioCard 
                         externalProjectLink="https://malmi003.github.io/unit-4-game/"
@@ -26,7 +26,7 @@ class Portfolio extends Component {
                         imageSrc="./images/SpaceExplorer.png"
                         externalCodeLink="https://github.com/malmi003/unit-4-game"
                         codeTitle="Space Explorer Game Code"
-                        description="ksjdvckjsr nvjab erhcabwe chbacbnvbdfvbj abnvawbevna wbevcawvech jabecamncja ncjab vhber vhabwe cbawe,jhcb"
+                        description="Explore the galaxy through numbers"
                     />
                 </div>
                 <div className="row w-75 mx-auto pb-4">
@@ -36,7 +36,7 @@ class Portfolio extends Component {
                         imageSrc="./images/Vege.png"
                         externalCodeLink="https://github.com/malmi003/TriviaGame/"
                         codeTitle="Trivia Game Code"
-                        description="ksjdvckjsr nvjab erhcabwe chbacbnvbdfvbj abnvawbevna wbevcawvech jabecamncja ncjab vhber vhabwe cbawe,jhcb"
+                        description="Help spread the fun of growing your own food by testing your knowledge of seedlings."
                     />
                     <PortfolioCard 
                         externalProjectLink="https://malmi003.github.io/Train-Scheduler/"
@@ -44,7 +44,7 @@ class Portfolio extends Component {
                         imageSrc="./images/TrainScheduler.png"
                         externalCodeLink="https://github.com/malmi003/Train-Scheduler"
                         codeTitle="Hogwarts Trip Planner Code"
-                        description="ksjdvckjsr nvjab erhcabwe chbacbnvbdfvbj abnvawbevna wbevcawvech jabecamncja ncjab vhber vhabwe cbawe,jhcb"
+                        description="A rideshare app for those traveling to the magical world."
                     />
                 </div>
                 <div className="row w-75 mx-auto pb-4">
@@ -54,7 +54,7 @@ class Portfolio extends Component {
                         imageSrc="./images/Session.png"
                         externalCodeLink="https://github.com/JonOpacich/CB-Project-1"
                         codeTitle="Session Code"
-                        description="ksjdvckjsr nvjab erhcabwe chbacbnvbdfvbj abnvawbevna wbevcawvech jabecamncja ncjab vhber vhabwe cbawe,jhcb"
+                        description="'Session: study together' was created to facilitate study group creation in the coding bootcamp."
                     />
                     <PortfolioCard 
                         externalProjectLink="https://thawing-garden-86806.herokuapp.com/"
@@ -62,7 +62,7 @@ class Portfolio extends Component {
                         imageSrc="./images/FriendFinder.png"
                         externalCodeLink="https://github.com/malmi003/Friend_Finder"
                         codeTitle="Friend Finder Code"
-                        description="ksjdvckjsr nvjab erhcabwe chbacbnvbdfvbj abnvawbevna wbevcawvech jabecamncja ncjab vhber vhabwe cbawe,jhcb"
+                        description="Full-stack application that matches people and dogs based on their compatibility."
                     />
                 </div>
                 <div className="row w-75 mx-auto pb-4">
@@ -72,7 +72,7 @@ class Portfolio extends Component {
                         imageSrc="./images/Burger.png"
                         externalCodeLink="https://github.com/malmi003/burger"
                         codeTitle="Eat the Veggie Burger Code"
-                        description="ksjdvckjsr nvjab erhcabwe chbacbnvbdfvbj abnvawbevna wbevcawvech jabecamncja ncjab vhber vhabwe cbawe,jhcb"
+                        description="An app designed to help you explore the world of meatless burgers (and demo use of a db)."
                     />
                     <PortfolioCard 
                         externalProjectLink="https://petcupid.herokuapp.com/"
@@ -80,7 +80,7 @@ class Portfolio extends Component {
                         imageSrc="./images/PetCupid.png"
                         externalCodeLink="https://github.com/kmvincent/Project2"
                         codeTitle="Pet Cupid Code"
-                        description="ksjdvckjsr nvjab erhcabwe chbacbnvbdfvbj abnvawbevna wbevcawvech jabecamncja ncjab vhber vhabwe cbawe,jhcb"
+                        description="This application uses the Pet Finder API to match perspective pet owners wih their ideal pet based on their survey results"
                     />
                 </div>
                 <div className="row w-75 mx-auto pb-4">
