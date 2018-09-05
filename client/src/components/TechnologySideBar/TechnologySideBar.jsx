@@ -102,8 +102,12 @@ class TechnologySideBar extends Component {
                     proficiencyRating={3}
                 />
                 <Skill
-                    skill="ReactJS"
+                    skill="React.js"
                     proficiencyRating={4}
+                />
+                <Skill
+                    skill="Nodemailer"
+                    proficiencyRating={3}
                 />
                 <Skill
                     skill="Java"
