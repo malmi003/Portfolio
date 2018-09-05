@@ -13,7 +13,6 @@ class Portfolio extends Component {
                     </div>
                 </div>
                 <div className="row mx-auto">
-                    <div className="col-lg-2"><TechnologySideBar /></div>
                     <div className="col-lg-10">
                         <div className="row mx-auto pb-4">
                             <PortfolioCard 
@@ -25,10 +24,9 @@ class Portfolio extends Component {
                                 description="Find and explore new mediums/local artists, this app allows artists to login and submit their art and create their own portfolios"
                             />
                             <PortfolioCard 
-                                externalProjectLink="https://malmi003.github.io/
-                                Space-Explorer-Javascript/"
+                                externalProjectLink="https://malmi003.github.io/Space-Explorer-Javascript/"
                                 projectTitle="Space Explorer Math Game"
-                                imageSrc="./images/SpaceExplorer1.png"
+                                imageSrc="./images/SpaceExplorer.png"
                                 externalCodeLink="https://github.com/malmi003/
                                 Space-Explorer-Javascript"
                                 codeTitle="Space Explorer Game Code"
@@ -55,6 +53,14 @@ class Portfolio extends Component {
                         </div>
                         <div className="row mx-auto pb-4">
                             <PortfolioCard 
+                                externalProjectLink="http://trinitydogsmn.com/"
+                                projectTitle="Trinity Dogs"
+                                imageSrc="./images/TrinityDogs.png"
+                                externalCodeLink="http://trinitydogsmn.com/"
+                                codeTitle="Trinity Dogs"
+                                description="A website updated for M.U.S.H.R. dog trainer, Jessica Kuehlman, bringing her vision to life"
+                            />
+                            <PortfolioCard 
                                 externalProjectLink="https://malmi003.github.io/HP-Rideshare-Board/"
                                 projectTitle="Hogwarts Trip Planner"
                                 imageSrc="./images/TrainScheduler.png"
@@ -62,6 +68,8 @@ class Portfolio extends Component {
                                 codeTitle="Hogwarts Trip Planner Code"
                                 description="A rideshare app for those traveling to the magical world"
                             />
+                        </div>
+                        <div className="row mx-auto pb-4">
                             <PortfolioCard 
                                 externalProjectLink="https://thawing-garden-86806.herokuapp.com/"
                                 projectTitle="Friend Finder"
@@ -70,8 +78,6 @@ class Portfolio extends Component {
                                 codeTitle="Friend Finder Code"
                                 description="Full-stack application that matches people and dogs based on their compatibility"
                             />
-                        </div>
-                        <div className="row mx-auto pb-4">
                             <PortfolioCard 
                                 externalProjectLink="https://malmi003.github.io/Ships-Clicky-Game/"
                                 projectTitle="Ships Clicky Game"
@@ -80,6 +86,8 @@ class Portfolio extends Component {
                                 codeTitle="Ships Clicky Game Code"
                                 description="This React app was built to test your memory with some of the big ships seen in the Great Lakes."
                             />
+                        </div>
+                        <div className="row mx-auto pb-4">
                             <PortfolioCard 
                                 externalProjectLink="https://morning-springs-85911.herokuapp.com/"
                                 projectTitle="Community Class Scraper"
@@ -88,8 +96,6 @@ class Portfolio extends Component {
                                 codeTitle="Community Class Scraper Code"
                                 description="This app scrapes the Minneapolis Public Schools Community Education website for the latest classes allowing you to save favorites and notes for reference later"
                             />
-                        </div>
-                        <div className="row mx-auto pb-4">
                             <PortfolioCard 
                                 externalProjectLink="https://obscure-shelf-18720.herokuapp.com/"
                                 projectTitle="Eat the Veggie Burger"
@@ -98,6 +104,9 @@ class Portfolio extends Component {
                                 codeTitle="Eat the Veggie Burger Code"
                                 description="An app designed to help you explore the world of meatless burgers (and demo the use of database utilization)."
                             />
+                            
+                        </div>
+                        <div className="row mx-auto pb-4">
                             <PortfolioCard 
                                 externalProjectLink="https://malmi003.github.io/Word-Guess-Game/"
                                 projectTitle="Word Guess Game"
@@ -106,8 +115,6 @@ class Portfolio extends Component {
                                 codeTitle="Word Guess Game Code"
                                 description="Explore MN trees by playing this classic word-guess game"
                             />
-                        </div>
-                        <div className="row mx-auto pb-4">
                             <PortfolioCard 
                                 externalProjectLink="https://malmi003.github.io/Trivia-Game/"
                                 projectTitle="Vege Trivia Game"
@@ -116,8 +123,10 @@ class Portfolio extends Component {
                                 codeTitle="Trivia Game Code"
                                 description="Help spread the fun of growing your own food by testing your knowledge of vegetable seedlings"
                             />
+                            
                         </div>
                     </div>
+                    <div className="col-lg-2"><TechnologySideBar /></div>
                 </div>
             </div>
         );

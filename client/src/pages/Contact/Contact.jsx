@@ -9,16 +9,12 @@ class Contact extends Component {
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
-        axios({
-            method: "POST", 
-            url:"http://localhost:3002/api/send", 
-            data: {
-                name: name,   
-                email: email,  
-                message: message
-            }
+        axios.post("/api/send", 
+        { 
+            name: name,   
+            email: email,  
+            message: message
         }).then((response)=>{
-            console.log("in the front end")
             if (response.data.msg === 'success'){
                 alert("Message Sent."); 
                 this.resetForm()

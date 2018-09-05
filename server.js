@@ -44,7 +44,7 @@ if (process.env.NODE_ENV === "production") {
 // Routes
 // =====================================
 let contactSendRoute = require("./routes/index");
-app.use("/api/send", contactSendRoute);
+app.use("/api", contactSendRoute);
  // !!!change to "../client/build/index.html" once we have a build folder
  app.use("/", function (req, res) {
   res.sendFile(path.join(__dirname, "../client/public/index.html"));

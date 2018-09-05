@@ -1,8 +1,21 @@
+h3 {
+    margin-bottom: 1rem;
+}
+#TechnologySideBar {
+    margin-bottom: 2rem;
+}
 .progressOval {
     height: 10px;
     width: 30px;
-    background-color: rgba(59, 94, 72, 1);
+    background-color: rgba(97, 114, 67, .7);
     border-radius: 25%;
     display: inline-block;
     margin-right: .2rem;
-  }
+}
+.badge {
+    min-width: 180px;
+    color: rgba(84, 95, 111, 1);
+    border: 1px solid rgba(84, 95, 111, .8);
+    border-radius: 6px;
+    background: none;
+}
