@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
+// need to add "is-active class to hambuger to make it work"
 class Navbar extends Component {
     state = {
         activeUrl: "",
+        hamburgerActive: false,
     }
     identifyActivePage = () => {
         let parsedUrl = window.location.href.split("/").pop();
@@ -20,14 +23,37 @@ class Navbar extends Component {
             this.identifyActivePage()
         };
     };
+    changeHamburgerStatus = () => {
+        if (this.state.hamburgerActive) {
+            this.setState({
+                hamburgerActive: false,
+            });
+        } else {
+            this.setState({
+                hamburgerActive: true,
+            });
+        };
+    };
 
     render() {
         return (
             <nav className="navbar navbar-expand-md navbar-light sticky-top">
-                <Link className="navbar-brand" to="/">Amanda Malmin</Link>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                <Link className="navbar-brand" to="/">Amanda Malmin <br /> <small>&nbsp; coding for climate</small>
+                </Link>
+                {/* hambuger btn */}
+                <button
+                    className={this.state.hamburgerActive? "hamburger hamburger--collapse navbar-toggler hamburger--spring is-active":"hamburger hamburger--collapse hamburger--spring navbar-toggler"}
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    onClick={this.changeHamburgerStatus}
+                >
+                    <span className="hamburger-box">
+                        <span className="hamburger-inner"></span>
+                    </span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ml-auto">

@@ -1,0 +1,8 @@
+.progressOval {
+    height: 10px;
+    width: 30px;
+    background-color: rgba(59, 94, 72, 1);
+    border-radius: 25%;
+    display: inline-block;
+    margin-right: .2rem;
+  }

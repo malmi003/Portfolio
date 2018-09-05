@@ -15,6 +15,7 @@ body {
   color: rgba(84, 95, 111, 1);
   /* font-family: 'Tajawal', sans-serif; */
   font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Francois One', sans-serif; */
   /* font-family: 'Amatic SC', cursive; */
   margin-bottom: 60px; /* Margin bottom by footer height */
 }
@@ -59,7 +60,8 @@ a:hover {
 /* ---------------------------------MAIN---------------------------- */
 /*................general................*/
 .active {
-  text-decoration: underline;
+  font-weight: bolder;
+  font-style: italic; 
 }
 .jumbotron {
   /* Background Photo by Matthew Smith on Unsplash */
@@ -92,10 +94,6 @@ a:hover {
 .btn-primary:hover {
   background-color: rgba(59, 94, 72, .9) !important;
   border-color: rgba(59, 94, 72, .9) !important;
-}
-
-.hover-box {
-  
 }
 
 /*................portfolio................*/

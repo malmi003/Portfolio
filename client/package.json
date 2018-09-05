@@ -4,6 +4,7 @@
   "description": "amanda-malmin-portfolio",
   "private": true,
   "proxy": "http://localhost:3001/",
+  "homepage": "https://malmi003.github.io/Portfolio/",
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -14,6 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }

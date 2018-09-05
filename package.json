@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "main": "server.js",
-  "homepage": "http://malmi003.github.io/Portfolio",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "nodemailer": "^4.6.8"
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
