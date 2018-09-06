@@ -3,6 +3,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
+require('dotenv').config();
+
 // const mongoose = require("mongoose");
 // var logger = require("morgan");
 
@@ -43,8 +45,8 @@ if (process.env.NODE_ENV === "production") {
 
 // Routes
 // =====================================
-let contactSendRoute = require("./routes/index");
-app.use("/api", contactSendRoute);
+let apiRoutes = require("./routes/index");
+app.use("/api", apiRoutes);
  // !!!change to "../client/build/index.html" once we have a build folder
  app.use("/", function (req, res) {
   res.sendFile(path.join(__dirname, "../client/public/index.html"));

@@ -49,4 +49,9 @@ router.post('/send', (req, res, next) => {
   })
 })
 
+// route to get process.env variables
+router.get('/key', (req, res) => {
+  res.json(process.env.REACT_APP_GOOGLE_MAPS_KEY)
+});
+
 module.exports = router;

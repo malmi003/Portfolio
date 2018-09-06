@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import { Link } from "react-router-dom";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+// import axios from "axios";
 
 const style = {
     // width: '80%',
@@ -10,13 +11,13 @@ const style = {
     'marginTop': '2rem',
     'marginBottom': '2rem',
 }
-
 export class MapContainer extends Component {
     state = {
         showingInfoWindow: false,
         activeMarker: {},
         selectedPlace: {},
     };
+    
     onMarkerClick = (props, marker, e) =>
         this.setState({
             selectedPlace: props,
@@ -28,8 +29,8 @@ export class MapContainer extends Component {
             this.setState({
                 showingInfoWindow: false,
                 activeMarker: null
-            })
-        }
+            });
+        };
     };
     render() {
         return (
@@ -66,7 +67,9 @@ export class MapContainer extends Component {
         );
     }
 }
-
-export default GoogleApiWrapper({
-    apiKey: ("'" + process.env.GOOGLE_KEY + "'")
-})(MapContainer)
+export default GoogleApiWrapper(
+    (props) => ({
+      apiKey: props.apiKey,
+      key: props.key
+    }
+  ))(MapContainer)
