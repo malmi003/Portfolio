@@ -115,7 +115,7 @@ class TechnologySideBar extends Component {
                 />
                 <Skill
                     skill="Firebase"
-                    proficiencyRating={4}
+                    proficiencyRating={3}
                 />
                 <Skill
                     skill="Heroku"

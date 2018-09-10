@@ -58,7 +58,7 @@ class Portfolio extends Component {
                                 imageSrc="./images/TrinityDogs.png"
                                 externalCodeLink="http://trinitydogsmn.com/"
                                 codeTitle="Trinity Dogs"
-                                description="A website updated for M.U.S.H.R. dog trainer, Jessica Kuehlman, bringing her vision to life"
+                                description="A website updated for M.U.S.H.R. dog trainer, Jessica Kuehlman, inspiring clients and bringing her vision to life"
                             />
                             <PortfolioCard 
                                 externalProjectLink="https://malmi003.github.io/HP-Rideshare-Board/"

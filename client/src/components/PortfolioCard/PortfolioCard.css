@@ -20,7 +20,9 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(240, 222, 200, .75);
+    /* background-color: rgba(240, 222, 200, .75); */
+    background-color: rgba(97, 114, 67, .7);
+    /* background-color: rgba(59, 94, 72, .7); */
     overflow: hidden;
     width: 0;
     height: 100%;
@@ -30,7 +32,8 @@
     width: 100%;
   }
   .text {
-    color: rgba(84, 95, 111, 1);
+    /* color: rgba(84, 95, 111, 1); */
+    color: rgba(240, 222, 200, 1);
     font-size: 30px;
     position: absolute;
     font-weight: bolder;

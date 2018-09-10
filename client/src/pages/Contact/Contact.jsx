@@ -2,7 +2,6 @@ import React, { Component } from "react";
 // import { Link } from "react-router-dom";
 import axios from "axios";
 import "./Contact.css";
-// import Map from "../../components/Map"
 
 class Contact extends Component {
     constructor(props) {
@@ -13,22 +12,9 @@ class Contact extends Component {
             message: "",
             confirmationMessage: "",
             messageSent: false,
-            key: "",
+            mapUrl: "https://snazzymaps.com/embed/96475",
         };
     };
-    componentDidMount = () => {
-            // this.apiKeyFunction()
-    }
-    // componentDidUpdate = (prevProps, prevState) => {
-    //     if (this.state.key !== prevState.key) {
-    //         this.apiKeyFunction()
-    //         console.log("update")
-    //     };
-    // }
-    // forceUpdateHandler () {
-    //     this.forceUpdate();
-    //     console.log("force")
-    // }
     handleInputChange = (event, callback) => {
         const { name, value } = event.target;
         this.setState(
@@ -69,19 +55,6 @@ class Contact extends Component {
             message: "",
         });
     };
-    // apiKeyFunction() {
-    //     axios.get("/api/key")
-    //     .then(data => {
-    //         this.setState({
-    //             key: data.data
-    //         });
-    //         console.log("setting state: ", data.data)
-    //     })
-    //     .catch(err => console.log(err))
-
-    //     // this.forceUpdate();
-    // };
-
 
     render() {
         return (
@@ -92,8 +65,9 @@ class Contact extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-10 mx-auto">
+                    <div className="col-md-5 my-auto">
                         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                            <h3 className="text-center">Send a Message</h3>
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
                                 <input
@@ -138,15 +112,8 @@ class Contact extends Component {
                             {this.state.confirmationMessage}
                         </div>
                     </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-12 mx-auto" id="map-col">
-                    <iframe title="map" src="https://snazzymaps.com/embed/96475" width="100%" height="600px" style={{"border":"none"}} id="map"></iframe>
-                        {/* <Map 
-                            apiKey={this.state.key}
-                            onLoad={this.state.key !== "" ? this.forceUpdateHandler : ""}
-                            key={this.state.key}
-                        /> */}
+                    <div className="col-md-7" id="map-col">
+                        <iframe title="map" src={this.state.mapUrl} width="100%" height="600px" style={{ "border": "none" }} id="map"></iframe>
                     </div>
                 </div>
             </div>

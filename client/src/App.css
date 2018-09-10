@@ -38,23 +38,12 @@ a:hover {
   background: rgba(84, 95, 111, .8) !important;
 }
 .navbar {
-  background: rgba(97, 114, 67, .7);
+  /* background: rgba(97, 114, 67, .7); */
+  background: rgba(59, 94, 72, .7);
 }
 .navbar a {
   margin-bottom: 2em;
   color: rgba(240, 222, 200, 1) !important;
-}
-/*................footer................*/
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 110%;
-  height: 60px; /* Set the fixed height of the footer here */
-  line-height: 60px; /* Vertically center the text there */
-  color: rgba(240, 222, 200, 1) !important;
-}
-.footer p {
-  margin-bottom: 0;
 }
 
 /* ---------------------------------MAIN---------------------------- */

@@ -17,17 +17,9 @@ class Home extends Component {
                                 alt="water through the woods" className="img-thumbnail" />
                         </div>
                         <div className="col-md-8">
-                            <p>
-                                I am an experienced and passionate environmentalist looking for a career as a full stack web developer in a dynamic work environment directly addressing climate change and sustainability by coding solutions that impact the masses.
-                </p>
-                            <p>
-                                I studied Organizational Management and Environment & Sustainability at the U of M in Duluth where I was named their business school’s version of valedictorian. After spending several years in the small and startup world, I obtained a Full-Stack web development certification from the U of M Twin Cities in order to make change through agile and accessible programming technologies in both the front and back ends including HTML, CSS, Node.js, JavaScript and Firebase to name a few.
-                </p>
-                            <p>
-                                I consider myself a self motivated individual with exceptional communication skills, strong analytical abilities, great attention to detail, extensive experience in leadership and team roles, an energetic ability to learn quickly, and an unrivaled drive to provide the best level of service possible.
-                </p>
-                            <h3 className="text-center my-3">Want more detail?</h3>
-                            <Link role="button" className="btn btn-block btn-primary mb-3" to="/resume">Check out my full resume</Link>
+                            
+                            <h3 className="text-center my-3">Want more detail on my background?</h3>
+                            <Link role="button" className="btn btn-block btn-primary mb-3" to="/resume">Check out my resume</Link>
                         </div>
                     </div>
                 </div>
