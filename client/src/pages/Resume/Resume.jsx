@@ -1,28 +1,89 @@
 import React, { Component } from "react";
 // import { Link } from "react-router-dom";
-import ExperienceCard from "../../components/ExperienceCard"
+import ExperienceCard from "../../components/ExperienceCard";
+import SkillPill from "../../components/SkillPill";
 
 class Resume extends Component {
     render() {
         return (
-            <div>
-                <p>
-                    I am an experienced and passionate environmentalist looking for a career as a full stack web developer in a dynamic work environment directly addressing climate change and sustainability by coding solutions that impact the masses.
-                </p>
-                <p>
-                    I studied Organizational Management and Environment & Sustainability at the U of M in Duluth where I was named the business school’s version of valedictorian. After spending several years in the small and startup world, I obtained a Full-Stack web development certification from the U of M Twin Cities focusing on the MERN stack (MongoDB, Express, React, Node) and various other web development technologies.
-                            </p>
-                <p>
-                    I consider myself a self motivated individual with exceptional communication skills, strong analytical abilities, great attention to detail, extensive experience in leadership and team roles, energetic ability to learn quickly, and an unrivaled drive to provide the best level of service possible.
-                            </p>
-                <section>
+            <article className="container-fluid" id="resume-body">
+                <header className="text-center pt-2">
+                    <img src="./images/profile.png" alt="profile" className="rounded-circle" />
+                    <h1>Amanda Malmin</h1>
+                    <h2>Climate Change Fighter for Hire</h2>
+                    <p>Experienced and passionate environmentalist looking for a career as a Full Stack Web Developer in a dynamic work environment directly addressing climate change and sustainability through code.</p>
+                </header>
+                <div className="row">
+                    <SkillPill
+                        skills={[
+                            "Bash/Terminal",
+                            "Git/Github",
+                            "HTML",
+                            "CSS",
+                            "Bootstrap",
+                            "Bulma",
+                            "Materialize",
+                            "WordPress",
+                            "CSS Grid/Flexbox",
+                            "UI/UX",
+                            "Javascript",
+                            "jQuery",
+                            "RESTful API's",
+                            "JSON/AJAX",
+                            "Node.js",
+                            "Handlebars",
+                            "Basic Algorithms",
+                            "ORM",
+                            "Sequelize",
+                            "SQL/MySQL",
+                            "MongoDB",
+                            "Mongoose",
+                            "Express.js",
+                            "React.js",
+                            "Nodemailer",
+                            "Java",
+                            "Firebase",
+                            "Heroku",
+                            "Passport",
+                            "MVC",
+                            
+                        ]}
+                        id="tech-skills-section"
+                        className="col-md-6 text-center mt-5"
+                        title="Technical Skills"
+                    />
+                    <SkillPill
+                        skills={[
+                            "Project Management",
+                            "SWAT Analysis",
+                            "Adaptability",
+                            "Performance Under Pressure",
+                            "R&D",
+                            "Team Building",
+                            "Dedication",
+                            "Analytics",
+                            "Customer Service",
+                            "Communication",
+                            "Quick Learning",
+                            "Systems Thinking",
+                            "Leadership",
+                            "Continuous Improvement",
+                            "Creative Problem Solving",
+                            "And More!",
+                        ]}
+                        id="other-skills-section"
+                        className="col-md-6 text-center mt-5"
+                        title="Additional Skills"
+                    />
+                </div>
+                <section className="mt-5" id="jobs-section">
                     <h2 className="text-center">Work Experience</h2>
                     <div className="card-columns">
                         <ExperienceCard
                             descriptions={[
-                                "Assist in making events around the metro area zero-waste",
+                                "Assist in designing and executing zero-waste events around the metro",
                                 "Educate the public and vendors on the importance/procedures of such efforts",
-                                "Provide any necessary support to volunteers/vendors during events"
+                                "Support volunteers/vendors to meet our collective goals during events"
                             ]}
                             title="Zero Waste Events Team Member"
                             subtitle="Eureka Recycling"
@@ -38,7 +99,7 @@ class Resume extends Component {
                             ]}
                             title="Women’s Soccer Coach"
                             subtitle="Southwest High School"
-                            dates="2017 & 2018 fall season"
+                            dates="2017 &amp; 2018 fall season"
                             location="Minneapolis, MN"
                         />
                         <ExperienceCard
@@ -83,18 +144,16 @@ class Resume extends Component {
                         />
                     </div>
                 </section>
-                <section>
+                <section id="edu-section">
                     <h2 className="text-center">Education</h2>
                     <div className="card-deck">
                         <ExperienceCard
                             descriptions={[
-                                "Built full web apps using the M.E.R.N stack",
-                                "Other technologies include HTML, CSS, Javascript, various CSS frameworks, jQuery, APIs, Handlebars, DB management via Sequelize/MySQL, and many others"
+                                "Using a combination of individual and intensive teamwork, built full stack web apps using the MVC framework and M.E.R.N stack",
+                                "See Technical Skills for more technologies utilized during this course"
                             ]}
                             title="Full Stack Web Development Certificate"
                             subtitle="The University of Minnesota Twin Cities"
-                            dates="June 2018 - Aug 2018"
-                            location="Minneapolis, MN"
                         />
                         <ExperienceCard
                             descriptions={[
@@ -104,8 +163,6 @@ class Resume extends Component {
                             ]}
                             title="Bachelor of Business Administration"
                             subtitle="The University of Minnesota Duluth"
-                            dates="Sept 2011 - May 2015"
-                            location="Duluth, MN"
                         />
                         <ExperienceCard
                             descriptions={[
@@ -130,8 +187,10 @@ class Resume extends Component {
                     dates=""
                     location=""
                 /> */}
-
-            </div>
+                <h3 className="text-center py-3 my-5"> 
+                    <a href="./images/Resume-AmandaMalmin.pdf" download>Downloadable Resume here</a>
+                </h3>
+            </article>
         );
     };
 };

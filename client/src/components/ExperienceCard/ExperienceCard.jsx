@@ -5,20 +5,18 @@ import "./ExperienceCard.css";
 const ExperienceCard = props => {
     const descriptions = props.descriptions;
     const listItems = descriptions.map(description =>
-        <li>{description}</li>
+        <li className="dish-list-item">{description}</li>
     )
     return (
-        <section className="card">
+        <section className="card bg-brown">
             <div className="card-body">
-                <h5 className="card-title">{props.title}</h5>
-                <h6 className="card-subtitle mb-2 text-muted">{props.subtitle}</h6>
+                <h5 className="card-title text-center">{props.title}</h5>
+                <h6 className="card-subtitle mb-2 text-muted text-center">{props.subtitle}</h6>
                 <div>
-                    <h6 className="card-subtitle mb-2 text-small-italic">{props.dates}</h6>
-                    <h6 className="card-subtitle mb-2 text-small-italic">{props.location}</h6>
+                    <h6 className="card-subtitle mb-2 text-small-italic text-center">{props.dates}</h6>
+                    <h6 className="card-subtitle mb-2 text-small-italic text-center">{props.location}</h6>
                 </div>
-                <ul className="card-text">
-                    <li className="dish-list-item">{listItems}</li>
-                </ul>
+                <ul className="card-text">{listItems}</ul>
             </div>
         </section>
     )

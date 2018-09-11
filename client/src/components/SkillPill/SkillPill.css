@@ -1,0 +1,8 @@
+#other-skills-section .badge, #tech-skills-section .badge {
+    min-width: 0;
+    color: rgba(97, 114, 67, 1);
+    border: 2px solid rgba(97, 114, 67, 1);
+    border-radius: 6px;
+    /* background: rgba(240, 222, 200, .3); */
+    margin: .15rem;
+}

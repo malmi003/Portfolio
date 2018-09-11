@@ -3,7 +3,7 @@ import "./PortfolioCard.css";
 
 export const PortfolioCard = props => (
     <div className="col-md-6">
-        <div className="container">
+        <div className="cards-container">
             <a href={props.externalProjectLink} title={props.projectTitle}>
                 <div className="card text-center">
                     <img className="card-img-top image" src={props.imageSrc} alt={props.projectTitle} />

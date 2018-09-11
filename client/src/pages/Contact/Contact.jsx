@@ -58,7 +58,7 @@ class Contact extends Component {
 
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container-fluid" id="contact-body">
                 <div className="row">
                     <div className="col-md-12">
                         <h2 className="border-bottom border-secondary pageHeader">Contact</h2>

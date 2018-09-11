@@ -4,15 +4,31 @@ import { Link } from "react-router-dom";
 class Jumbotron extends Component {
     render() {
         return (
-            <div className="jumbotron">
-                <h1 className="display-4">Hello, world!</h1>
-                <p className="lead">
-                    Climate change fighter for hire.
+            <article className="container-fluid">
+                <div className="jumbotron">
+                    <h1 className="display-4">Hello, world!</h1>
+                    <p className="lead">
+                        Meet Amanda: A Climate Change Fighter for Hire
                 </p>
-                <hr className="my-4" />
-                <p>More words I have yet to write.</p>
-                <Link className="btn btn-primary btn-lg" to="/resume" role="button">Learn more</Link>
-            </div>
+
+                    <hr className="my-4" />
+                    <div className="row">
+                        <div className="col-md-2"></div>
+                        <div className="col-md-8">
+                            <p>
+                                My mission is to help code powerful, impacting, and scalable solutions to move towards a more sustainable tomorrow.
+                            </p>
+                            <p>
+                                Got an idea addressing climate change, environmental degradation, pollution, or one of its related tenets but need someone to help you code it? You've come to the right place!
+                            </p>
+                            <Link className="btn btn-primary btn-lg m-2 home-btns" to="/portfolio" role="button">Learn more about projects I've done</Link>
+                            <Link className="btn btn-primary btn-lg m-2 home-btns" to="/resume" role="button">And my background</Link>
+                            <Link className="btn btn-primary btn-lg home-btns" to="/contact" role="button">Then send me a message on how I can help achieve your ideas</Link>
+                        </div>
+                        <div className="col-md-2"></div>
+                    </div>
+                </div>
+            </article>
         );
     };
 };

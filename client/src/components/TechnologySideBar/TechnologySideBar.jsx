@@ -130,7 +130,7 @@ class TechnologySideBar extends Component {
                     proficiencyRating={4}
                 />
                 <Skill
-                    skill="Wordpress"
+                    skill="WordPress"
                     proficiencyRating={3}
                 />
             </section>

@@ -1,3 +1,17 @@
-/* .card {
-    display: inline-block;
+.bg-brown {
+    background: rgba(115, 103, 88, .2);
+}
+/* #jobs-section h2, #edu-section h2 {
+    font-size: 2rem;
 } */
+#jobs-section .card-title, #edu-section .card-title {
+    font-size: 1.75rem;
+}
+#jobs-section .card-subtitle, #edu-section .card-subtitle {
+    font-size: 1.4rem;
+}
+#jobs-section .text-small-italic, #edu-section .text-small-italic {
+    font-style: italic;
+    font-size: .8rem;
+    color:rgba(59, 94, 72, 1);
+}
