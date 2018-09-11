@@ -1,8 +1,10 @@
 {
-  "main.css": "static/css/main.f293c3b5.css",
-  "main.css.map": "static/css/main.f293c3b5.css.map",
-  "main.js": "static/js/main.1b5fc9fc.js",
-  "main.js.map": "static/js/main.1b5fc9fc.js.map",
+  "main.css": "static/css/main.b2ed5e0c.css",
+  "main.css.map": "static/css/main.b2ed5e0c.css.map",
+  "main.js": "static/js/main.060b8802.js",
+  "main.js.map": "static/js/main.060b8802.js.map",
   "static/media/background-image-matthew-smith-5935-unsplash.jpg": "static/media/background-image-matthew-smith-5935-unsplash.9958e1fa.jpg",
-  "static/media/cracked_soil.jpeg": "static/media/cracked_soil.cdd11314.jpeg"
+  "static/media/cracked_soil.jpeg": "static/media/cracked_soil.cdd11314.jpeg",
+  "static/media/jeremy-bishop-282007-unsplash.jpg": "static/media/jeremy-bishop-282007-unsplash.d72be628.jpg",
+  "static/media/samuel-scrimshaw-76646-unsplash.jpg": "static/media/samuel-scrimshaw-76646-unsplash.27749186.jpg"
 }
