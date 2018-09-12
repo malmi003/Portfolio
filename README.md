@@ -1,3 +1,8 @@
+# My (official) Portfolio
+This app is designed to present information about me, my background, and projects I've worked on all in one convinient place. 
+
+## Check out the deployed version [here] (https://amanda-malmin.herokuapp.com/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
