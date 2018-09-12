@@ -25,16 +25,16 @@ if (process.env.NODE_ENV === "production") {
 
 // Routes
 // =====================================
-let apiRoutes = require("./routes/index");
+let apiRoutes = require("./routes");
 app.use("/api", apiRoutes);
  app.use("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
 // !!not sure we need the below code with pulling in the routes (not finished).
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> Server now on port ${PORT}!`);
