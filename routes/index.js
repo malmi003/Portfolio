@@ -1,12 +1,9 @@
 let express = require('express');
 let router = express.Router();
 let nodemailer = require('nodemailer');
-// const creds = require("../config/config");
 
 let transport = {
   host: 'smtp.mailgun.org',
-  // port: 587,
-  // secure: false,
   auth: {
     user: process.env.REACT_APP_MAILGUN_LOGIN,
     pass: process.env.REACT_APP_MAILGUN_PW
@@ -48,10 +45,5 @@ router.post('/send', (req, res, next) => {
     }
   })
 })
-
-// route to get process.env variables
-// router.get('/key', (req, res) => {
-//   res.json(process.env.REACT_APP_GOOGLE_MAPS_KEY)
-// });
 
 module.exports = router;

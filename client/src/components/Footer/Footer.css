@@ -9,6 +9,9 @@
   .footer p {
     margin-bottom: 0;
   }
+#footer-icons {
+    text-align: right;
+}
 .fa {
     padding: 10px;
     font-size: 20px;
@@ -31,3 +34,15 @@
     color: rgba(240, 222, 200, 1);
     opacity:.9;
 }
+@media (max-width: 575px) {
+    body {
+      margin-bottom: 120px;
+    }
+    .footer {
+      height: 120px; /* Set the fixed height of the footer here */
+      line-height: 50px; /* Vertically center the text there */
+    }
+    #footer-icons {
+        text-align: center;
+    }
+  }
