@@ -8,8 +8,8 @@ let transport = {
   // port: 587,
   // secure: false,
   auth: {
-    user: creds.USER,
-    pass: creds.PASS
+    user: process.env.REACT_APP_MAILGUN_LOGIN,
+    pass: process.env.REACT_APP_MAILGUN_PW
   }
 }
 
@@ -50,8 +50,8 @@ router.post('/send', (req, res, next) => {
 })
 
 // route to get process.env variables
-router.get('/key', (req, res) => {
-  res.json(process.env.REACT_APP_GOOGLE_MAPS_KEY)
-});
+// router.get('/key', (req, res) => {
+//   res.json(process.env.REACT_APP_GOOGLE_MAPS_KEY)
+// });
 
 module.exports = router;

@@ -35,7 +35,7 @@ class Contact extends Component {
                 if (response.data.msg === 'success') {
                     // alert("Message Sent.");
                     this.setState({
-                        confirmationMessage: "Message successfully sent! I will get back to you as soon as possible.",
+                        confirmationMessage: "Thank you for your message! I will get back to you as soon as possible.",
                         messageSent: true,
                     })
                     this.resetForm()
