@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-// need to add "is-active class to hambuger to make it work"
+// need to add "is-active class to hamburger to make it work"
 class Navbar extends Component {
     state = {
-        activeUrl: "",
+        activeUrl: "portfolio",
         hamburgerActive: false,
     }
     identifyActivePage = () => {
@@ -40,7 +40,7 @@ class Navbar extends Component {
             <nav className="navbar navbar-expand-md navbar-light sticky-top">
                 <Link className="navbar-brand" to="/">Amanda Malmin <br /> <small>&nbsp; coding for climate</small>
                 </Link>
-                {/* hambuger btn */}
+                {/* hamburger btn */}
                 <button
                     className={this.state.hamburgerActive? "hamburger hamburger--collapse navbar-toggler hamburger--spring is-active":"hamburger hamburger--collapse hamburger--spring navbar-toggler"}
                     type="button"

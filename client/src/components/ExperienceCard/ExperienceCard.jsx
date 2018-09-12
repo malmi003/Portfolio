@@ -8,6 +8,7 @@ const ExperienceCard = props => {
         <li className="dish-list-item">{description}</li>
     )
     return (
+        <div className={"mt-3 " + props.col}>
         <section className="card bg-brown">
             <div className="card-body">
                 <h5 className="card-title text-center">{props.title}</h5>
@@ -19,6 +20,7 @@ const ExperienceCard = props => {
                 <ul className="card-text">{listItems}</ul>
             </div>
         </section>
+        </div>
     )
 };
 export default ExperienceCard;

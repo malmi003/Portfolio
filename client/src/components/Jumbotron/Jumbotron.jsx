@@ -21,8 +21,8 @@ class Jumbotron extends Component {
                             <p>
                                 Got an idea addressing climate change, environmental degradation, pollution, or one of its related tenets but need someone to help you code it? You've come to the right place!
                             </p>
-                            <Link className="btn btn-primary btn-lg m-2 home-btns" to="/portfolio" role="button">Learn more about projects I've done</Link>
-                            <Link className="btn btn-primary btn-lg m-2 home-btns" to="/resume" role="button">And my background</Link>
+                            <Link className="btn btn-primary btn-lg m-2 home-btns" to="/resume" role="button">Learn more about my background</Link>
+                            <Link className="btn btn-primary btn-lg m-2 home-btns" to="/portfolio" role="button">And other projects I've done</Link>
                             <Link className="btn btn-primary btn-lg home-btns" to="/contact" role="button">Then send me a message on how I can help achieve your ideas</Link>
                         </div>
                         <div className="col-md-2"></div>
