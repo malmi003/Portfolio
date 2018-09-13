@@ -15,6 +15,9 @@ class Contact extends Component {
             mapUrl: "https://snazzymaps.com/embed/96475",
         };
     };
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     handleInputChange = (event, callback) => {
         const { name, value } = event.target;
         this.setState(
@@ -35,7 +38,7 @@ class Contact extends Component {
                 if (response.data.msg === 'success') {
                     // alert("Message Sent.");
                     this.setState({
-                        confirmationMessage: "Thank you for your message! I will get back to you as soon as possible.",
+                        confirmationMessage: "Thank you for your message! I will get back to you as soon as I can.",
                         messageSent: true,
                     })
                     this.resetForm()
@@ -113,7 +116,7 @@ class Contact extends Component {
                         </div>
                     </div>
                     <div className="col-md-7" id="map-col">
-                        <iframe title="map" src={this.state.mapUrl} width="100%" height="600px" style={{ "border": "none" }} id="map"></iframe>
+                            <iframe title="map" src={this.state.mapUrl} width="100%" height="600px" style={{ "border": "none" }} id="map"></iframe>
                     </div>
                 </div>
             </div>

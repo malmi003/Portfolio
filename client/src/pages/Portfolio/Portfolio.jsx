@@ -4,6 +4,9 @@ import { PortfolioCard } from "../../components/PortfolioCard/PortfolioCard";
 import TechnologySideBar from "../../components/TechnologySideBar"
 
 class Portfolio extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
     render() {
         return (
             <div className="container-fluid portfolio-body">

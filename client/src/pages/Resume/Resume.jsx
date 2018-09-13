@@ -4,6 +4,9 @@ import ExperienceCard from "../../components/ExperienceCard";
 import SkillPill from "../../components/SkillPill";
 
 class Resume extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
     render() {
         return (
             <article className="container-fluid" id="resume-body">

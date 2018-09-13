@@ -13,9 +13,14 @@ h3 {
     margin-right: .2rem;
 }
 .badge {
-    min-width: 180px;
+    /* min-width: 180px; */
     color: rgba(84, 95, 111, 1);
     border: 1px solid rgba(84, 95, 111, .8);
     border-radius: 6px;
     background: none;
+}
+@media (min-width: 768px) {
+    .badge {
+        min-width: 180px;
+    }
 }

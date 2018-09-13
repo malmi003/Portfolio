@@ -17,7 +17,7 @@ export const PortfolioCard = props => (
                 </div>
             </a>
             <div className="card-body">
-                <a href={props.externalCodeLink} className="small btn btn-primary" title={props.codeTitle}
+                <a href={props.externalCodeLink} className="small btn btn-primary wiggle-btn" title={props.codeTitle}
                     alt={props.codeTitle}>Check out the code</a>
             </div>
         </div>
