@@ -2,7 +2,7 @@ import React from "react";
 import "./PortfolioCard.css";
 
 export const PortfolioCard = props => (
-    <div className="col-md-6">
+    <div className="col-md-6" key={props.projectTitle}>
         <div className="cards-container">
             <a href={props.externalProjectLink} title={props.projectTitle}>
                 <div className="card text-center">

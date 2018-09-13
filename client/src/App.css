@@ -112,7 +112,11 @@ a:hover {
   background: linear-gradient(0deg,rgba(253, 252, 250, .8), rgba(253, 252, 250, .8)), url("./images/samuel-scrimshaw-76646-unsplash.jpg");
   background-size: contain;
 }
-
+#profile-img {
+  -webkit-box-shadow: 0px 5px 10px 10px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 5px 10px 10px rgba(0,0,0,0.5);
+  box-shadow: 0px 5px 10px 10px rgba(0,0,0,0.5);
+}
 /*................contact................*/
 /* Photo by Jeremy Bishop on Unsplash */
 #contact-body {

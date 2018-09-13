@@ -4,8 +4,9 @@ import "./ExperienceCard.css";
 
 const ExperienceCard = props => {
     const descriptions = props.descriptions;
+    let i =0;
     const listItems = descriptions.map(description =>
-        <li className="dish-list-item">{description}</li>
+        <li className="dish-list-item" key={i++}>{description}</li>
     )
     return (
         <div className={"mt-3 " + props.col}>
