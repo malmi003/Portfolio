@@ -17,9 +17,7 @@ class Jumbotron extends Component {
                         <div className="col-md-8">
                             <p>
                                 My mission is to help code powerful, impacting, and scalable solutions to move towards a more sustainable tomorrow. &nbsp;
-                            {/* </p>
-                            <p> */}
-                                Got an idea addressing climate change, environmental degradation, pollution, or one of its related tenets but need someone to help you code it? You've come to the right place!
+                                Have an idea addressing climate change, environmental degradation, pollution, or one of its related tenets but need someone to help you code it? You've come to the right place!
                             </p>
                             <Link className="btn btn-primary btn-lg m-2 home-btns" to="/resume" role="button">Learn more about my background</Link>
                             <Link className="btn btn-primary btn-lg m-2 home-btns" to="/portfolio" role="button">And other projects I've done</Link>
