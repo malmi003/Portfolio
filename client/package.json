@@ -5,7 +5,9 @@
   "private": true,
   "proxy": "http://localhost:3001/",
   "engines": {
-    "node": "10.1.0"
+    "node": "10.1.0",
+    "npm": "5.6.0",
+    "yarn": "1.9.4"
   },
   "dependencies": {
     "react": "^16.0.0",
