@@ -11,7 +11,7 @@ class Resume extends Component {
         return (
             <article className="container-fluid" id="resume-body">
                 <header className="text-center pt-2">
-                    <img src="./images/profile.png" alt="profile" className="rounded-circle my-3" id="profile-img" />
+                    <img src="./images/profile.jpg" alt="profile" className="rounded-circle my-3" id="profile-img" />
                     <h1>Amanda Malmin</h1>
                     <h2>Climate Change Fighter for Hire</h2>
                     <p>Experienced and passionate environmentalist looking for a career as a Full Stack Web Developer in a dynamic work environment directly addressing climate change and sustainability through code.</p>

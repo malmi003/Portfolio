@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-// need to add "is-active class to hamburger to make it work"
 class Navbar extends Component {
     state = {
-        activeUrl: "portfolio",
+        activeUrl: "",
         hamburgerActive: false,
     }
     identifyActivePage = () => {
@@ -42,7 +41,11 @@ class Navbar extends Component {
                 </Link>
                 {/* hamburger btn */}
                 <button
-                    className={this.state.hamburgerActive? "hamburger hamburger--collapse navbar-toggler hamburger--spring is-active":"hamburger hamburger--collapse hamburger--spring navbar-toggler"}
+                    className={
+                        this.state.hamburgerActive ? 
+                        "hamburger hamburger--collapse navbar-toggler hamburger--spring is-active"
+                        :"hamburger hamburger--collapse hamburger--spring navbar-toggler"
+                    }
                     type="button"
                     data-toggle="collapse"
                     data-target="#navbarNav"
