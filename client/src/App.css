@@ -4,6 +4,7 @@ pastel brown: rgba(115, 103, 88, 1);
 black coral: rgba(84, 95, 111, 1);
 fern green: rgba(97, 114, 67, 1);
 gray-asparagus: rgba(59, 94, 72, 1);
+blue: rgba(59, 81, 94, 1);
 */
 
 /* ----------------------------- GLOBAL ------------------------- */
@@ -37,7 +38,7 @@ a:hover {
   font-size: 3rem;
 }
 .bg-primary {
-  background: rgba(84, 95, 111, .8) !important;
+  background: rgba(59, 81, 94, .8) !important;
 }
 .navbar {
   /* background: rgba(97, 114, 67, .7); */
@@ -77,24 +78,25 @@ a:hover {
   background-color: rgba(59, 94, 72, .9) !important;
   border-color: rgba(59, 94, 72, .9) !important;
 }
-/*.................home................. */
-#home-container .container-fluid {
-  padding-right: 0;
-  padding-left: 0;
+
+.btn-light {
+  background-color: rgba(226, 221, 221, 1);;
+  border-color: rgb(226, 221, 221);
+  color:rgba(59, 94, 72, 1);
+  font-weight: bold; 
 }
-.jumbotron {
-  /* Background Photo by Matthew Smith on Unsplash */
-  background: linear-gradient(0deg,rgba(84, 95, 111, .6),rgba(115, 103, 88, .6)), url("./images/background-image-matthew-smith-5935-unsplash.jpg");
-  background-size: cover;
-  color: rgba(240, 222, 200, 1);
-  text-align: center;
-  border-radius: 0;
-  display: flex;
-  flex-flow: column;
-  height: 100%;
+.btn-light:active {
+  background-color: rgba(59, 94, 72, .8) !important;
+  border-color: rgb(43, 65, 51) !important;
+  color: rgb(226, 221, 221);
 }
-.home-btns {
-  white-space: normal;
+.btn-light:focus {
+  box-shadow: 0 0 0 0.2rem rgba(59, 94, 72, 1) !important;
+}
+.btn-light:hover {
+  background-color: rgba(59, 94, 72, .9) !important;
+  border-color: rgb(43, 65, 51) !important;
+  color: rgb(226, 221, 221);
 }
 /*................portfolio................*/
 .portfolio-body {
