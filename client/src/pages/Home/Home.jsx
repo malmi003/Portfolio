@@ -22,11 +22,12 @@ class Home extends Component {
                 <section id="portfolio-section" className="row text-center">
                     <div className="col-12">
                         <Link to="/portfolio">
-                            <img id="wood-pile" src='./images/radek-grzybowski-67609-unsplash.jpg' alt='wood pile' />
+                            <img id="wood-pile" src='./images/chris-yang-435205-unsplash.jpg' alt='wood pile' />
+                            <div id="wood-pile-overlay">
+                                <h3 id="wood-pile-text">See what I've been building</h3>
+                            </div>
                         </Link>
-                        <div id="wood-pile-overlay">
-                            <h3 id="wood-pile-text">See what I've been building</h3>
-                        </div>
+
                     </div>
                 </section>
                 <section id="contact-section" className="row text-center">
@@ -35,11 +36,12 @@ class Home extends Component {
                     <div className="col-12">
                         <h3>Reach out!</h3>
                         <hr className="light my-4" />
-                        <p>Ready to start our climate-fighting adventure?</p>
+                        <p className="mb-5">Ready to start our climate-fighting adventure?</p>
+                        
                         <Button
                             btnClass="btn-primary"
                             link="/contact"
-                            btnName={"Then send me a message \n & let's get started"}
+                            btnName={[<i className="fa fa-envelope" aria-hidden="true"></i>, " Then send me a message \n & let's get started"]}
                         />
                     </div>
                 </section>

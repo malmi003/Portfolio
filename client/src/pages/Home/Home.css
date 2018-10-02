@@ -46,7 +46,6 @@
   }
   #home-container #portfolio-section {
       padding: 0;
-      color: whitesmoke;
       position: relative;
   }
   #portfolio-section:hover #wood-pile-overlay{
@@ -69,6 +68,7 @@
     opacity: 0;
     transition: .5s ease;
     background-color: #3b515e;
+    color: whitesmoke;
   }
   #wood-pile-text {
     position: absolute;
@@ -81,7 +81,7 @@
   }
   #contact-section {
       position: relative;
-      color: #5e483b;
+      color: rgba(59,94,72,.8);
   }
   #contact-section h3 {
     font-weight: bolder;
