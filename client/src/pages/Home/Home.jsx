@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import Jumbotron from "../../components/Jumbotron";
 import HomeSection from "../../components/HomeSection";
@@ -13,7 +13,7 @@ class Home extends Component {
         return (
             <div id="home-container">
                 <Jumbotron />
-                <HomeSection 
+                <HomeSection
                     sectionId="resume-section"
                     btnClass="btn-light"
                     link="/resume"
@@ -21,20 +21,26 @@ class Home extends Component {
                 />
                 <section id="portfolio-section" className="row text-center">
                     <div className="col-12">
-                    <Button 
-                       btnClass="btn-primary"
-                       link="/portfolio"
-                       btnName="See my projects" 
-                    />
+                        <Link to="/portfolio">
+                            <img id="wood-pile" src='./images/radek-grzybowski-67609-unsplash.jpg' alt='wood pile' />
+                        </Link>
+                        <div id="wood-pile-overlay">
+                            <h3 id="wood-pile-text">See what I've been building</h3>
+                        </div>
                     </div>
                 </section>
                 <section id="contact-section" className="row text-center">
+                    <div className="triangle-top-right"></div>
+                    <div className="triangle-top-left"></div>
                     <div className="col-12">
-                    <Button 
-                       btnClass="btn-primary"
-                       link="/contact"
-                       btnName="Send me a message" 
-                    />
+                        <h3>Reach out!</h3>
+                        <hr className="light my-4" />
+                        <p>Ready to start our climate-fighting adventure?</p>
+                        <Button
+                            btnClass="btn-primary"
+                            link="/contact"
+                            btnName={"Then send me a message \n & let's get started"}
+                        />
                     </div>
                 </section>
             </div>

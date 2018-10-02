@@ -2,6 +2,10 @@
     padding-right: 0;
     padding-left: 0;
   }
+#home-container .col-12 {
+    padding-right: 0;
+    padding-left: 0;
+}
   .jumbotron {
     /* Background Photo by Matthew Smith on Unsplash */
     background: linear-gradient(0deg,rgba(84, 95, 111, .6),rgba(115, 103, 88, .6)), url("../../images/background-image-matthew-smith-5935-unsplash.jpg");
@@ -19,18 +23,19 @@
     border-radius: 300px;
     padding: .7em;
   }
-  section {
+  #home-container section {
       padding: 8rem 0;
       margin: 0 auto;
   }
   #resume-section {
       background: linear-gradient(rgba(59,94,72,.8), rgba(59,94,72,1));
       color: whitesmoke;
+      position: relative;
   }
   #resume-section p {
     color: rgba(226, 221, 221, 0.685);
 }
-  hr {
+#home-container hr {
     max-width: 100px;
     /* border-width: 30px; */
     border: 0;
@@ -38,4 +43,91 @@
     box-sizing: content-box;
     height: 0;
     /* overflow: visible; */
+  }
+  #home-container #portfolio-section {
+      padding: 0;
+      color: whitesmoke;
+      position: relative;
+  }
+  #portfolio-section:hover #wood-pile-overlay{
+        opacity: .9;
+  }
+  #wood-pile {
+      max-width:100%;
+      display: block;
+        height: auto;
+      /* object-fit: cover; */
+  }
+  #wood-pile-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #3b515e;
+  }
+  #wood-pile-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;  
+  }
+  #contact-section {
+      position: relative;
+      color: #5e483b;
+  }
+  #contact-section h3 {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+#contact-section p {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+  .triangle-right {
+    position: absolute;
+    bottom:0;
+    right:0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 400px 400px;
+    border-color: transparent transparent #3b5e48 transparent;
+  }
+  .triangle-left {
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 400px 0 0 400px;
+    border-color: transparent transparent transparent #3b5e48;
+  }
+  .triangle-top-left {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 400px 400px 0 0;
+    border-color: rgba(59,94,72,.1) transparent transparent transparent;
+  }
+  .triangle-top-right {
+    position: absolute;
+    top:0;
+    right:0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 400px 400px 0;
+    border-color: transparent rgba(59,94,72,.1) transparent transparent;
   }

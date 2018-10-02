@@ -8,7 +8,6 @@
 @media (min-width: 768px) {
 .cards-container {
     position: relative;
-    /* width: 50%; */
   }
   .image {
     display: block;
@@ -17,25 +16,23 @@
   }
   .overlay {
     position: absolute;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    /* background-color: rgba(240, 222, 200, .75); */
-    background-color: rgba(97, 114, 67, .7);
-    /* background-color: rgba(59, 94, 72, .7); */
-    overflow: hidden;
-    width: 0;
     height: 100%;
-    transition: .5s ease;
+    width: 100%;
+    opacity: 0;
+    transition: .75s ease;
+    background-color: #3b515e;
   }
   .cards-container:hover .overlay {
-    width: 100%;
+    opacity: .9;
   }
   .text {
-    /* color: rgba(84, 95, 111, 1); */
+    position: absolute;
     color: rgba(240, 222, 200, 1);
     font-size: 30px;
-    position: absolute;
     font-weight: bolder;
     top: 50%;
     left: 50%;
@@ -43,28 +40,10 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     white-space: nowrap;
+    text-align: center;
   }
 }
-@keyframes wiggle-btn{
-  0%{
-      transform: rotate(2deg);
-      }
-  25%{
-      transform: rotate(-2deg);
-      }
-  50%{
-      transform: rotate(2deg);
-      }
-  75%{
-      transform: rotate(-2deg);
-      }
-  100%{
-      transform: rotate(2deg);
-      }
-}
-.wiggle-btn:hover{
-  animation: wiggle-btn 2s infinite 0s linear;
-}
+
 @media (max-width: 767px) {
     .card-title {
         margin-top: 1rem;

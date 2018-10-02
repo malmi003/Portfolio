@@ -12,7 +12,7 @@ class Portfolio extends Component {
             <div className="container-fluid portfolio-body">
                 <div className="row mx-auto">
                     <div className="col-md-12">
-                        <h2 id="portfolio-header" className="border-bottom border-secondary pageHeader">Portfolio</h2>
+                        <h2 id="portfolio-header" className="pageHeader border-bottom border-secondary">My Works</h2>
                     </div>
                 </div>
                 <div className="row mx-auto">

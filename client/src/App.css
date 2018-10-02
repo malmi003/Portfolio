@@ -19,7 +19,7 @@ body {
   /* font-family: 'Francois One', sans-serif; */
   /* font-family: 'Amatic SC', cursive; */
   margin-bottom: 60px; /* Margin bottom by footer height */
-  /* background: green; */
+  background: rgba(97, 114, 67, .5);
 }
 a {
   color: rgba(84, 95, 111, 1);
@@ -75,8 +75,8 @@ a:hover {
   box-shadow: 0 0 0 0.2rem rgba(59, 94, 72, 1) !important;
 }
 .btn-primary:hover {
-  background-color: rgba(59, 94, 72, .9) !important;
-  border-color: rgba(59, 94, 72, .9) !important;
+  background-color: rgba(59, 94, 72, .8) !important;
+  border-color: rgba(59, 94, 72, .8) !important;
 }
 
 .btn-light {
@@ -134,10 +134,5 @@ a:hover {
 @media (max-width: 768px) {
   .nav-link {
     padding: 0 !important;
-  }
-}
-@media (min-height: 672px) {
-  body {
-    background: rgba(97, 114, 67, .5);
   }
 }
