@@ -6,7 +6,7 @@
     padding-right: 0;
     padding-left: 0;
 }
-  .jumbotron {
+#home-container .jumbotron {
     /* Background Photo by Matthew Smith on Unsplash */
     background: linear-gradient(0deg,rgba(84, 95, 111, .6),rgba(115, 103, 88, .6)), url("../../images/background-image-matthew-smith-5935-unsplash.jpg");
     background-size: cover;

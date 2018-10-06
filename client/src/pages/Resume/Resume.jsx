@@ -1,85 +1,32 @@
 import React, { Component } from "react";
 // import { Link } from "react-router-dom";
-import ExperienceCard from "../../components/ExperienceCard";
+// import ExperienceCard from "../../components/ExperienceCard";
 import SkillPill from "../../components/SkillPill";
+import Timecard from "../../components/Timecard";
 
 class Resume extends Component {
     componentDidMount() {
         window.scrollTo(0, 0)
-      }
+    }
     render() {
         return (
             <article className="container-fluid" id="resume-body">
-                <header className="text-center pt-2">
-                    <img src="./images/profile.jpg" alt="profile" className="rounded-circle my-3" id="profile-img" />
-                    <h1>Amanda Malmin</h1>
-                    <h2>Climate Change Fighter for Hire</h2>
-                    <p>Experienced and passionate environmentalist looking for a career as a Full Stack Web Developer in a dynamic work environment directly addressing climate change and sustainability through code.</p>
-                </header>
-                <div className="row">
-                    <SkillPill
-                        skills={[
-                            "Bash/Terminal",
-                            "Git/Github",
-                            "HTML",
-                            "CSS",
-                            "Bootstrap",
-                            "Bulma",
-                            "Materialize",
-                            "WordPress",
-                            "CSS Grid/Flexbox",
-                            "UI/UX",
-                            "Javascript",
-                            "jQuery",
-                            "RESTful API's",
-                            "JSON/AJAX",
-                            "Node.js",
-                            "Handlebars",
-                            "Basic Algorithms",
-                            "ORM",
-                            "Sequelize",
-                            "SQL/MySQL",
-                            "MongoDB",
-                            "Mongoose",
-                            "Express.js",
-                            "React.js",
-                            "Nodemailer",
-                            "Java",
-                            "Firebase",
-                            "Heroku",
-                            "Passport",
-                            "MVC",
+            {/* <header class="jumbotron">
+                <div className="row pt-2">
+                    <div className="col-md-4 text-center">
+                        <img src="./images/profile.jpg" alt="profile" className="rounded-circle my-3" id="profile-img" />
+                    </div>
+                    <div className="col-md-7">
+                        <h1>Amanda Malmin</h1>
+                        <h2>Climate Change Fighter for Hire</h2>
+                        <p>Experienced and passionate environmentalist looking for a career as a Full Stack Web Developer in a dynamic work environment directly addressing climate change and sustainability through code. I come from a background of figuring out how small pieces move together to create big pictures. Although I have unparalleled focus, I’m a lifelong learner and am known for quickly adapting to whatever role is required to achieve collective, long-term, strategic goals.</p>
 
-                        ]}
-                        id="tech-skills-section"
-                        className="col-md-6 text-center mt-5"
-                        title="Technical Skills"
-                    />
-                    <SkillPill
-                        skills={[
-                            "Project Management",
-                            "SWAT Analysis",
-                            "Adaptability",
-                            "Performance Under Pressure",
-                            "R&D",
-                            "Team Building",
-                            "Dedication",
-                            "Analytics",
-                            "Customer Service",
-                            "Communication",
-                            "Quick Learning",
-                            "Systems Thinking",
-                            "Leadership",
-                            "Continuous Improvement",
-                            "Creative Problem Solving",
-                            "And More!",
-                        ]}
-                        id="other-skills-section"
-                        className="col-md-6 text-center mt-5"
-                        title="Additional Skills"
-                    />
+                    </div>
+                    <div className="col-md-1"></div>
                 </div>
-                <section className="mt-5" id="jobs-section">
+            </header> */}
+                
+                {/* <section className="mt-5" id="jobs-section">
                     <h2 className="text-center">Work Experience</h2>
                     <div className="container-fluid">
                         <div className="row">
@@ -142,7 +89,7 @@ class Resume extends Component {
                         </div>
                     </div>
                 </section>
-                <section id="edu-section" className="mt-5">
+                <section id="edu-section" className="mt-5"> 
                     <h2 className="text-center">Education</h2>
                     <div className="row">
                         <ExperienceCard
@@ -176,11 +123,113 @@ class Resume extends Component {
                             col="col-lg-4"
                         />
                     </div>
+                        </section> */}
+
+                <section className="row pt-5">
+                    <div className="col-md-9">
+                        <h2 className="text-center">Full Stack Web Developer and Utility Agent</h2>
+                        <p className="font-weight-bold text-center">Smart, Maintainable Code, Creative Problem Solver, Triple Bottom Line Vision</p>
+                        <div className="main-timeline">
+                            <Timecard
+                                year="2018"
+                                title="Full-Stack Web Development: University of Minnesota Twin Cities"
+                                description="Using a combination of individual and intensive teamwork, learned the technologies needed to build thoughtful full stack web apps using the MVC framework and M.E.R.N stack"
+                            />
+                            <Timecard
+                                year="2018-curr."
+                                title="Zero Waste Events: Eureka Recycling"
+                                description="Working with an amazing group of zero-waste enthusiasts, we've been able to divert an average of 94% of waste from local events around the metro!"
+                            />
+                            <Timecard
+                                year="2018-curr."
+                                title="Website Consultant"
+                                description="After volunteering with a husky rescue for a number of years, I was able to partner with them and a trainer to update their websites in their image. Together we've been able to boost conversion rates significantly!"
+                            />
+                            <Timecard
+                                year="2017-18"
+                                title="Soccer Coach &amp; Mentor: Southwest Highschool"
+                                description="I've been lucky enough to work with SWHS the last couple years to progress their program and grow not only fantastic players but people as well."
+                            />
+                            <Timecard
+                                year="2016-17"
+                                title="Operations and Administrative Manager: Ecosentials"
+                                description="Working with this start-up was a new adventure everyday that pushed me to learn many new skills, decipher large amounts of data, and create action plans for growth and improvement across all sectors of the organization."
+                            />
+                            <Timecard
+                                year="2015"
+                                title="NRRI &amp; SOL Produce"
+                                description="Got to work with some great cross-functional teams conducting a feasibility analysis for utilizing thr NRRI roofs as part of larger stormwater
+                                management strategies and more start-up mischief with SOL Produce."
+                            />
+                            <Timecard
+                                year="2015"
+                                title="Graduation"
+                                description="Lucky enough to receive many program honors including Summa Cum Laude, the Labovitz School of Business &amp; Economics Award for Academic Excellence in B.A., the Academic Excellence Award for Org. Management, and more!"
+                            />
+                            <Timecard
+                                year="2014-16"
+                                title="Office Manager: Doucette's Special Events Rental"
+                                description="My time with Doucette's was filled with great challenges and laughs. While there, I worked on many projects outside of running the day-day office operations including creating an extensive training resource collection."
+                            />
+                            <Timecard
+                                year="2014"
+                                title="Victus Farms"
+                                description="Served as a 'Saturday crew' operative where I got hands on experience running an aquaponics/hydroponics facility"
+                            />
+                            <Timecard
+                                year="2013"
+                                title="A quick stint in NZ &amp; AUS"
+                                description="After spending 6 weeks backpacking around NZ, I completed an intense semester abroad in AUS soaking in the sun, gardens, and surrounding cultures."
+                            />
+                            <Timecard
+                                year="2011-15"
+                                title="Off to Duluth and UMD!"
+                                description="I started school at the University of Minnesota Duluth where I studied Organizational Management, Environment &amp; Sustainability, Finance and Health Care Management. I was able to take part in/lead many great groups and initiatives while on campus."
+                            />
+                        </div>
+                    </div>
+                    <div className="col-md-3">
+                    <SkillPill
+                        skills={[
+                            "SWAT Analysis",
+                            "Adaptability",
+                            "Diverse Team Management",
+                            "Performance Under Pressure",
+                            "R&D",
+                            "Project Management",
+                            "HR Management",
+                            "Team Building",
+                            "Dedication",
+                            "Analytics",
+                            "Customer Service",
+                            "Communication",
+                            "Leadership",
+                            "Multitasking",
+                            "Quick Learning",
+                            "Systems Thinking",
+                            "Product Development",
+                            "Inventory Management",
+                            "Green Initiatives",
+                            "Sustainable Design",
+                            "Book Keeping",
+                            "IT Help",
+                            "Continuous Improvement",
+                            "Creative Problem Solving",
+                            "Workflow Design", 
+                            "And More!",
+                            "Technical skills outlined in Portfolio",
+                           
+                        ]}
+                        id="other-skills-section"
+                        className="text-center mt-5"
+                        title="Some skills I picked up along the way"
+                    />
+                    </div>
                 </section>
                 <h3 className="text-center py-3 my-5">
                     <a href="./images/Resume-AmandaMalmin.pdf" download>Downloadable Resume here</a>
                 </h3>
-            </article>
+            </article >
         );
     };
 };

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 // import { Link } from "react-router-dom";
 import { PortfolioCard } from "../../components/PortfolioCard/PortfolioCard";
-import TechnologySideBar from "../../components/TechnologySideBar"
+import TechnologySideBar from "../../components/TechnologySideBar";
+
 
 class Portfolio extends Component {
     componentDidMount() {
@@ -12,7 +13,7 @@ class Portfolio extends Component {
             <div className="container-fluid portfolio-body">
                 <div className="row mx-auto">
                     <div className="col-md-12">
-                        <h2 id="portfolio-header" className="pageHeader border-bottom border-secondary">My Works</h2>
+                        <h2 id="portfolio-header" className="pageHeader border-bottom border-secondary">My Online Works</h2>
                     </div>
                 </div>
                 <div className="row mx-auto">
@@ -131,6 +132,8 @@ class Portfolio extends Component {
                     </div>
                     <div className="col-lg-2"><TechnologySideBar /></div>
                 </div>
+
+                
             </div>
         );
     };

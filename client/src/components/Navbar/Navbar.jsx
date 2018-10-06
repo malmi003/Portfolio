@@ -68,11 +68,11 @@ class Navbar extends Component {
                             <Link className="nav-link" to="/">Home</Link>
                         </li>
                         <li className={
-                            this.state.activeUrl === "resume"
+                            this.state.activeUrl === "background"
                                 ? "nav-link active"
                                 : "nav-link"
                         }>
-                            <Link className="nav-link" to="/resume">Resume</Link>
+                            <Link className="nav-link" to="/background">Background</Link>
                         </li>
                         <li className={
                             this.state.activeUrl === "portfolio"

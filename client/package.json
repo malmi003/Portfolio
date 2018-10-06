@@ -1,25 +1,25 @@
 {
-  "name": "amanda-malmin-portfolio",
-  "version": "0.1.0",
-  "description": "amanda-malmin-portfolio",
-  "private": true,
-  "proxy": "http://localhost:3001/",
-  "engines": {
-    "node": "10.1.0",
-    "npm": "5.6.0",
-    "yarn": "1.9.4"
-  },
-  "dependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.0.14"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "homepage": "https://amanda-malmin.herokuapp.com/"
-}
+    "name": "amanda-malmin-portfolio",
+    "version": "0.1.0",
+    "description": "amanda-malmin-portfolio",
+    "private": true,
+    "proxy": "http://localhost:3001/",
+    "engines": {
+      "node": "10.1.0",
+      "npm": "5.6.0",
+      "yarn": "1.9.4"
+    },
+    "dependencies": {
+      "react": "^16.0.0",
+      "react-dom": "^16.0.0",
+      "react-router-dom": "^4.3.1",
+      "react-scripts": "1.0.14"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+    },
+    "homepage": "https://amanda-malmin.herokuapp.com/"
+  }
