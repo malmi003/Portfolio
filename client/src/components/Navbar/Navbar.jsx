@@ -39,12 +39,15 @@ class Navbar extends Component {
             <nav className="navbar navbar-expand-md navbar-light sticky-top">
                 <Link className="navbar-brand" to="/">Amanda Malmin <br /> <small>&nbsp; coding for climate</small>
                 </Link>
+                <Link className="navbar-brand" to="/">
+                    <img src="./images/gimpTanRockStack.png" alt="rock stack logo" height="75" id="navbar-logo" />
+                </Link>
                 {/* hamburger btn */}
                 <button
                     className={
-                        this.state.hamburgerActive ? 
-                        "hamburger hamburger--collapse navbar-toggler hamburger--spring is-active"
-                        :"hamburger hamburger--collapse hamburger--spring navbar-toggler"
+                        this.state.hamburgerActive ?
+                            "hamburger hamburger--collapse navbar-toggler hamburger--spring is-active"
+                            : "hamburger hamburger--collapse hamburger--spring navbar-toggler"
                     }
                     type="button"
                     data-toggle="collapse"

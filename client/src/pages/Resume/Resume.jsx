@@ -133,22 +133,22 @@ class Resume extends Component {
                             <Timecard
                                 year="2018"
                                 title="Full-Stack Web Development: University of Minnesota Twin Cities"
-                                description="Using a combination of individual and intensive teamwork, learned the technologies needed to build thoughtful full stack web apps using the MVC framework and M.E.R.N stack"
+                                description="Using a combination of individual and intensive teamwork, I absorbed the technologies needed to build thoughtful full stack web apps using the MVC framework and M.E.R.N stack"
                             />
                             <Timecard
                                 year="2018-curr."
                                 title="Zero Waste Events: Eureka Recycling"
-                                description="Working with an amazing group of zero-waste enthusiasts, we've been able to divert an average of 94% of waste from local events around the metro!"
+                                description="Working with an amazing group of zero-waste enthusiasts, we've been able to engage the public, promote self-efficacy, and divert an average of 94% of waste from local events around the metro!"
                             />
                             <Timecard
                                 year="2018-curr."
                                 title="Website Consultant"
-                                description="After volunteering with a husky rescue for a number of years, I was able to partner with them and a trainer to update their websites in their image. Together we've been able to boost conversion rates significantly!"
+                                description="After volunteering with a husky rescue for a number of years, I partnered with their main trainer to bring their website up to snuff with their talents and vision via WordPress. Together we've been able to boost conversion rates significantly!"
                             />
                             <Timecard
                                 year="2017-18"
                                 title="Soccer Coach &amp; Mentor: Southwest Highschool"
-                                description="I've been lucky enough to work with SWHS the last couple years to progress their program and grow not only fantastic players but people as well."
+                                description="I've been fortunate enough to work with SWHS the last couple years to progress their women's soccer program and grow not only fantastic players, but people!"
                             />
                             <Timecard
                                 year="2016-17"
@@ -158,13 +158,13 @@ class Resume extends Component {
                             <Timecard
                                 year="2015"
                                 title="NRRI &amp; SOL Produce"
-                                description="Got to work with some great cross-functional teams conducting a feasibility analysis for utilizing thr NRRI roofs as part of larger stormwater
-                                management strategies and more start-up mischief with SOL Produce."
+                                description="Worked with some great cross-functional teams conducting a feasibility analysis for utilizing the NRRI roofs as part of larger stormwater
+                                management strategies and got into some exciting start-up mischief with SOL Produce."
                             />
                             <Timecard
                                 year="2015"
                                 title="Graduation"
-                                description="Lucky enough to receive many program honors including Summa Cum Laude, the Labovitz School of Business &amp; Economics Award for Academic Excellence in B.A., the Academic Excellence Award for Org. Management, and more!"
+                                description="I was lucky enough to receive many honors for my time at UMD including Summa Cum Laude, the Labovitz School of Business &amp; Economics Award for Academic Excellence in B.A., the Academic Excellence Award for Org. Management, and more!"
                             />
                             <Timecard
                                 year="2014-16"

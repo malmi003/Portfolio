@@ -2,6 +2,12 @@
 
 .navbar-brand { 
     line-height: 1.5rem;
+    padding-bottom: 0;
+    margin-right: 0;
+}
+#navbar-logo {
+  -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 /*!

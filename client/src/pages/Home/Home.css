@@ -48,16 +48,16 @@
       padding: 0;
       position: relative;
   }
-  #portfolio-section:hover #wood-pile-overlay{
+  #portfolio-section:hover #rock-stacks-overlay{
         opacity: .9;
   }
-  #wood-pile {
+  #rock-stacks {
       max-width:100%;
       display: block;
         height: auto;
       /* object-fit: cover; */
   }
-  #wood-pile-overlay {
+  #rock-stacks-overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -70,7 +70,7 @@
     background-color: #3b515e;
     color: whitesmoke;
   }
-  #wood-pile-text {
+  #rock-stacks-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -131,3 +131,32 @@
     border-width: 0 400px 400px 0;
     border-color: transparent rgba(59,94,72,.1) transparent transparent;
   }
+#rock-container {
+  margin-top:auto;
+  margin-bottom: auto;
+}
+#header-text {
+  text-align: left;
+}
+  @media (max-width:576px) {
+    #large-rock-stack {
+      display:none;
+    }
+    #header-text {
+      text-align: center;
+    }
+    
+  }
+  @media (min-width:577px) {
+    #large-rock-stack {
+      /* max-height: 285px; */
+      max-width:100%;
+    }
+  }
+  @media (min-width:992px) {
+    #large-rock-stack {
+      max-height: 250px;
+    }
+  }
+  
+  

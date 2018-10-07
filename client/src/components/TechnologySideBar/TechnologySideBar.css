@@ -7,7 +7,7 @@ h3 {
 .progressOval {
     height: 10px;
     width: 30px;
-    background-color: rgba(97, 114, 67, .7);
+    background-color: var(--green-trans-color);
     border-radius: 25%;
     display: inline-block;
     margin-right: .2rem;

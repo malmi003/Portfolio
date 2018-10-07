@@ -22,9 +22,9 @@ class Home extends Component {
                 <section id="portfolio-section" className="row text-center">
                     <div className="col-12">
                         <Link to="/portfolio">
-                            <img id="wood-pile" src='./images/chris-yang-435205-unsplash.jpg' alt='wood pile' />
-                            <div id="wood-pile-overlay">
-                                <h3 id="wood-pile-text">See what I've been building</h3>
+                            <img id="rock-stacks" src='./images/chris-yang-435205-unsplash.jpg' alt='rock stacks in front of water' />
+                            <div id="rock-stacks-overlay">
+                                <h3 id="rock-stacks-text">See what I've been building</h3>
                             </div>
                         </Link>
 
