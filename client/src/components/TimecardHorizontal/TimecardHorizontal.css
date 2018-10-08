@@ -1,0 +1,180 @@
+.main-timeline2:after,.main-timeline2:before{
+    content:"";display:
+    block;
+    width:100%;
+    clear:both
+}
+.main-timeline2 .timeline{
+    padding:0;
+    display:-webkit-inline-box
+}
+.main-timeline2 .col-md-3{
+    -ms-flex:0 0 25%;
+    flex:0 0 25%;
+    max-width:24%
+}
+.main-timeline2 .timeline-inner{
+    text-align:center;
+    margin:20px 20px 35px 35px;
+    position:relative
+}
+.main-timeline2 .timeline-inner:after{
+    content:"";
+    width:120%;
+    height:3px;
+    background:#555;
+    position:absolute;
+    bottom:0;
+    left:10%
+}
+.main-timeline2 .timeline:last-child .timeline-inner:after{
+    width:0
+}
+.main-timeline2 .year{
+    background:var(--green-color);
+    padding:5px 0;
+    border-radius:30px 0;
+    font-size:26px;
+    font-weight:700;
+    color:#fff;
+    z-index:1;
+    position:relative
+}
+.main-timeline2 .year:after,.main-timeline2 .year:before{
+    position:absolute;
+    top:-19px;
+    content:""
+}
+.main-timeline2 .year:before{
+    right:0;
+    border:10px solid transparent;
+    border-bottom:10px solid var(--green-color);
+    border-right:10px solid var(--green-color)
+}
+.main-timeline2 .year:after{
+    width:25px;
+    height:19px;
+    border-radius:0 0 20px;
+    right:1px
+}
+.main-timeline2 .timeline-content{
+    padding:10px 10px 30px;
+    border-left:3px solid var(--green-color);
+    position:relative
+}
+.main-timeline2 .timeline-content:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-1px;
+    border:10px solid transparent;
+    border-top:10px solid var(--green-color);
+    border-left:10px solid var(--green-color)
+}
+.main-timeline2 .timeline-content:after{
+    content:"";
+    width:25px;
+    height:19px;
+    border-radius:20px 0 0;
+    position:absolute;
+    top:0;
+    left:0
+}
+.main-timeline2 .post{
+    font-size:16px;
+    color:#333
+}
+.main-timeline2 .description{
+    font-size:14px;
+    color:#333
+}
+.main-timeline2 .timeline-icon{
+    width:70px;
+    height:70px;
+    line-height:65px;
+    border-radius:50%;
+    border:5px solid var(--green-color);
+    background:#fff;
+    font-size:30px;
+    color:#555;
+    z-index:1;
+    position:absolute;
+    bottom:-35px;
+    left:-35px
+}
+.main-timeline2 .timeline:nth-child(2n) .year{
+    background:var(--purple-color)
+}
+.main-timeline2 .timeline:nth-child(2n) .year:before{
+    border-bottom-color:var(--purple-color);
+    border-right-color:var(--purple-color)
+}
+.main-timeline2 .timeline:nth-child(2n) .timeline-content{
+    border-left-color:var(--purple-color)
+}
+.main-timeline2 .timeline:nth-child(2n) .timeline-content:before{
+    border-top-color:var(--purple-color);
+    border-left-color:var(--purple-color)
+}
+.main-timeline2 .timeline:nth-child(2n) .timeline-icon{
+    border-color:var(--purple-color)
+}
+.main-timeline2 .timeline:nth-child(3n) .year{
+    background:var(--blue-color)
+}
+.main-timeline2 .timeline:nth-child(3n) .year:before{
+    border-bottom-color:var(--blue-color);
+    border-right-color:var(--blue-color)
+}
+.main-timeline2 .timeline:nth-child(3n) .timeline-content{
+    border-left-color:var(--blue-color)
+}
+.main-timeline2 .timeline:nth-child(3n) .timeline-content:before{
+    border-top-color:var(--blue-color);
+    border-left-color:var(--blue-color)
+}
+.main-timeline2 .timeline:nth-child(3n) .timeline-icon{
+    border-color:var(--blue-color)
+}
+.main-timeline2 .timeline:nth-child(4n) .year{
+    background:var(--brown-color)
+}
+.main-timeline2 .timeline:nth-child(4n) .year:before{
+    border-bottom-color:var(--brown-color);
+    border-right-color:var(--brown-color)
+}
+.main-timeline2 .timeline:nth-child(4n) .timeline-content{
+    border-left-color:var(--brown-color)
+}
+.main-timeline2 .timeline:nth-child(4n) .timeline-content:before{
+    border-top-color:var(--brown-color);
+    border-left-color:var(--brown-color)
+}
+.main-timeline2 .timeline:nth-child(4n) .timeline-icon{
+    border-color:var(--brown-color)
+}
+.main-timeline2 .fa {
+    font-size: 30px;
+}
+.main-timeline2 img {
+    border-radius: 10px;
+}
+@media only screen and (max-width:990px){
+    .main-timeline2 .timeline-inner:after
+    {
+    width:110%
+    }
+    .main-timeline2 .timeline:nth-child(2n) .timeline-inner:after{
+        width:0
+    }
+}
+@media only screen and (max-width:767px){
+    .main-timeline2 .timeline{
+        margin-bottom:50px
+    }
+    .main-timeline2 .timeline-inner:after,.main-timeline2 .timeline:nth-child(2n) .timeline-inner:after{
+        width:100%;
+        height:3px;
+        left:0
+    }
+}

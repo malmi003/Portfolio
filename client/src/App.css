@@ -106,6 +106,25 @@ a:hover {
   border-color: rgb(43, 65, 51) !important;
   color: rgb(226, 221, 221);
 }
+.btn-darker {
+  background-color: rgba(84, 95, 111, .1);
+  border-color: rgba(84, 95, 111, 1);
+  color:rgba(84, 95, 111, 1);
+  font-weight: bold; 
+}
+.btn-darker:active {
+  background-color: rgba(84, 95, 111, .8) !important;
+  border-color: rgba(84, 95, 111, 1) !important;
+  color: rgb(226, 221, 221);
+}
+.btn-darker:focus {
+  box-shadow: 0 0 0 0.2rem rgba(84, 95, 111, 1) !important;
+}
+.btn-darker:hover {
+  background-color: rgba(84, 95, 111, .9) !important;
+  border-color: rgba(84, 95, 111, 1) !important;
+  color: rgb(226, 221, 221);
+}
 /*................portfolio................*/
 .portfolio-body {
   background: linear-gradient(0deg,rgba(253, 252, 250, .75), rgba(253, 252, 250, .75)), url("./images/cracked_soil.jpeg");
@@ -137,5 +156,8 @@ a:hover {
 @media (max-width: 768px) {
   .nav-link {
     padding: 0 !important;
+  }
+  .btn {
+    white-space: normal;
   }
 }

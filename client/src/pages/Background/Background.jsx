@@ -3,130 +3,26 @@ import React, { Component } from "react";
 // import ExperienceCard from "../../components/ExperienceCard";
 import SkillPill from "../../components/SkillPill";
 import Timecard from "../../components/Timecard";
+import TimecardHorizontal from "../../components/TimecardHorizontal";
 
 class Background extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            personalExpanded: false,
+        };
+      }
     componentDidMount() {
         window.scrollTo(0, 0)
+    }
+    togglePersonalSection = () => {
+        this.state.personalExpanded?this.setState({personalExpanded:false}):this.setState({personalExpanded:true});
     }
     render() {
         return (
             <article className="container-fluid" id="background-body">
-            {/* <header class="jumbotron">
-                <div className="row pt-2">
-                    <div className="col-md-4 text-center">
-                        <img src="./images/profile.jpg" alt="profile" className="rounded-circle my-3" id="profile-img" />
-                    </div>
-                    <div className="col-md-7">
-                        <h1>Amanda Malmin</h1>
-                        <h2>Climate Change Fighter for Hire</h2>
-                        <p>Experienced and passionate environmentalist looking for a career as a Full Stack Web Developer in a dynamic work environment directly addressing climate change and sustainability through code. I come from a background of figuring out how small pieces move together to create big pictures. Although I have unparalleled focus, I’m a lifelong learner and am known for quickly adapting to whatever role is required to achieve collective, long-term, strategic goals.</p>
-
-                    </div>
-                    <div className="col-md-1"></div>
-                </div>
-            </header> */}
-                
-                {/* <section className="mt-5" id="jobs-section">
-                    <h2 className="text-center">Work Experience</h2>
-                    <div className="container-fluid">
-                        <div className="row">
-                            <ExperienceCard
-                                descriptions={[
-                                    "Managed the office operations and procedures directly under company executives",
-                                    "Provided the best customer service possible while assisting with complex event planning processes ",
-                                    "Fostered lasting relationships with returning clients",
-                                    "Initiated and developed self-directed projects and systems for continuous improvement",
-                                    "Assisted in the development of educational, training, and marketing materials",
-                                    "Adapted and performed a diverse range of essential and novel functions on strict deadlines",
-                                    "Helped in the development and revision of employee roles and long term strategic vision and planning",
-                                ]}
-                                title="Office Manager"
-                                subtitle="Doucette’s Party and Tent Rental"
-                                dates="Aug 2014 – Aug 2016"
-                                location="Duluth, MN"
-                                col="col-lg-4"
-                            />
-                            <ExperienceCard
-                                descriptions={[
-                                    "Worked directly with company executives to create overall methodology to managing the day to day operations of a dynamic startup company",
-                                    "Developed/refined data to identify areas for improvement and creatively problem solve",
-                                    "Presented findings in a digestible and action oriented format",
-                                    "Fulfilled all purchase orders from placement to final delivery",
-                                    "Managed inventory including imports, forecasting, assembly & warehouse logistics",
-                                    "Designed pricing and promotional models for current and future sales",
-                                ]}
-                                title="Operations and Administrative Manager"
-                                subtitle="Ecosentials"
-                                dates="Sept 2016 - Nov 2017"
-                                location="Minneapolis, MN"
-                                col="col-lg-4"
-                            />
-                            <div className="col-lg-4">
-                                <ExperienceCard
-                                    descriptions={[
-                                        "Assist in designing and executing zero-waste events around the metro",
-                                        "Educate the public and vendors on the importance/procedures of such efforts",
-                                        "Support volunteers/vendors to meet our collective goals during events"
-                                    ]}
-                                    title="Zero Waste Events Team Member"
-                                    subtitle="Eureka Recycling"
-                                    dates="Apr 2018 - current"
-                                    location="Minneapolis, MN"
-                                />
-                                <ExperienceCard
-                                    descriptions={[
-                                        "Women’s Soccer Coach: Southwest Minneapolis High School",
-                                        "Green Infrastructure Intern: Natural Resource Research Institute",
-                                        "General Intern: Victus Farms, aqua/hydroponics facilities",
-                                        "Volunteer & website consultant: M.U.S.H.R.",
-                                    ]}
-                                    title="Other Roles"
-                                    subtitle=""
-                                    dates="Sept 2014 – Current"
-                                    location="MN"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="edu-section" className="mt-5"> 
-                    <h2 className="text-center">Education</h2>
-                    <div className="row">
-                        <ExperienceCard
-                            descriptions={[
-                                "Using a combination of individual and intensive teamwork, built full stack web apps using the MVC framework and M.E.R.N stack",
-                                "See Technical Skills for more technologies utilized during this course"
-                            ]}
-                            title="Full Stack Web Development Certificate"
-                            subtitle="The University of Minnesota Twin Cities"
-                            col="col-lg-4"
-                        />
-                        <ExperienceCard
-                            descriptions={[
-                                "Major: Organizational Management with an emphasis in sustainability",
-                                "Minors: Environment and Sustainability, Finance, and Health Care Management",
-                                "Participated in study abroad program at Curtin University in Perth, Australia",
-                            ]}
-                            title="Bachelor of Business Administration"
-                            subtitle="The University of Minnesota Duluth"
-                            col="col-lg-4"
-                        />
-                        <ExperienceCard
-                            descriptions={[
-                                "GPA: 4.0, Summa Cum Laude, Program Honors, Dean’s List all semesters",
-                                "Recipient of the Labovitz School of Business and Economics Award for Academic Excellence in Business Administration",
-                                "Recipient of Academic Excellence Award for Organizational Management",
-                                "Nominee for Academic Achievement and Commitment to the Management Profession Award",
-                                "CARE Committee nominee and presenter at the LSBE Student Showcase"
-                            ]}
-                            title="Academic Achievements"
-                            col="col-lg-4"
-                        />
-                    </div>
-                        </section> */}
-
                 <section className="row pt-5">
-                    <div className="col-md-9">
+                    <div className="col-lg-9">
                         <h2 className="text-center">Full Stack Web Developer and Utility Agent</h2>
                         <p className="font-weight-bold text-center">Smart, Maintainable Code, Creative Problem Solver, Triple Bottom Line Vision</p>
                         <div className="main-timeline">
@@ -188,7 +84,7 @@ class Background extends Component {
                             />
                         </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-lg-3">
                     <SkillPill
                         skills={[
                             "SWAT Analysis",
@@ -229,6 +125,84 @@ class Background extends Component {
                 <h3 className="text-center py-3 my-5">
                     <a href="./images/Resume-AmandaMalmin.pdf" download>Downloadable Resume here</a>
                 </h3>
+                <section class="row pt-5 justify-content-center">
+                <p>
+ 
+  <button 
+    class="btn btn-darker" 
+    type="button" 
+    data-toggle="collapse" 
+    data-target="#personal-timecards" 
+    aria-expanded="false" 
+    aria-controls="collapseExample"
+    onClick={this.togglePersonalSection}
+    >
+        {this.state.personalExpanded?<div><h3>See below</h3><p>click to collapse</p></div>:<div><h3>Want to see some personal accomplishments?</h3><p>click to expand</p></div>}
+    
+  </button>
+</p>
+<div class="collapse" id="personal-timecards">
+<div class="main-timeline2 p-md-5">              
+                    <TimecardHorizontal
+                        time="2012"
+                        title="Embraced a herbivorous diet &amp; ran my first half marathon"
+                        icon="fa-leaf"
+                        imageSrc="../../images/personal/gimpBurger.jpg"
+                        imageAlt="wild rice burger"
+                    />
+                     <TimecardHorizontal
+                        time="2013"
+                        title="Threw a ring into Mount Doom"
+                        icon="fa-kiwi-bird"
+                        imageSrc="../../images/personal/gimpDoom.jpg"
+                        imageAlt="sideview of Mt Doom"
+                    />
+                    <TimecardHorizontal
+                        time="2014"
+                        title="Slept on top of a car while traveling the unforgettable Australian country side"
+                        icon="fa-map-marked-alt"
+                        imageSrc="../../images/personal/gimpTent.jpg"
+                        imageAlt="car with rooftop tent next to water"
+                    />
+                    <TimecardHorizontal
+                        time="2015"
+                        title="Married my best friend"
+                        icon="fa-link"
+                        imageSrc="../../images/personal/gimpRings.jpg"
+                        imageAlt="two wedding rings"
+                    />
+                    <TimecardHorizontal
+                        time="2016"
+                        title="Became year-round cycle commuter &amp; adopted our first mutt"
+                        icon="fa-paw"
+                        imageSrc="../../images/personal/gimpDog.jpg"
+                        imageAlt="dog laying on side"
+                    />
+                    <TimecardHorizontal
+                        time="2017"
+                        title="Built a convertible oak crib for my sister's first kid"
+                        icon="fa-screwdriver"
+                        imageSrc="../../images/personal/gimpCrib.jpg"
+                        imageAlt="sideview of crib"
+                    />
+                    <TimecardHorizontal
+                        time="2018"
+                        title="Hiked over 100 miles solo on the SHT &amp; ran first 1/2 iron"
+                        icon="fa-shoe-prints"
+                        imageSrc="../../images/personal/gimpTrail.jpg"
+                        imageAlt="SHT"
+                    />
+                    <TimecardHorizontal
+                        time="2019"
+                        title="Will run first full marathon"
+                        icon="fa-medkit"
+                        imageSrc="../../images/personal/gimpLogo.jpg"
+                        imageAlt="Grandma's Marathon Logo"
+                    />
+                    </div>
+</div>
+                    
+                </section>
             </article >
         );
     };
