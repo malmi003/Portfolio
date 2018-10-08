@@ -152,7 +152,7 @@ class Background extends Component {
                     />
                      <TimecardHorizontal
                         time="2013"
-                        title="Threw a ring into Mount Doom"
+                        title="Threw a ring into Mount Doom and explored the cheeky kiwi culture"
                         icon="fa-kiwi-bird"
                         imageSrc="../../images/personal/gimpDoom.jpg"
                         imageAlt="sideview of Mt Doom"
@@ -166,7 +166,7 @@ class Background extends Component {
                     />
                     <TimecardHorizontal
                         time="2015"
-                        title="Married my best friend"
+                        title="Married my best friend on a beautiful Duluth day"
                         icon="fa-link"
                         imageSrc="../../images/personal/gimpRings.jpg"
                         imageAlt="two wedding rings"
@@ -194,7 +194,7 @@ class Background extends Component {
                     />
                     <TimecardHorizontal
                         time="2019"
-                        title="Will run first full marathon!"
+                        title="Will run first full marathon and do some more exploring"
                         icon="fa-medkit"
                         imageSrc="../../images/personal/gimpLogo.jpg"
                         imageAlt="Grandma's Marathon Logo"
