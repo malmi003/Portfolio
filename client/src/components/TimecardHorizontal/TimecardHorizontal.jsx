@@ -4,7 +4,7 @@ import "./TimecardHorizontal.css";
 
 const TimecardHorizontal = props => {
     return (
-        <div class="col-sm-6 col-md-3 timeline">
+        <div class="col-sm-6 col-md-4 col-lg-3 timeline">
             <div class="timeline-inner">
                 <div class="year">{props.time}</div>
                 <div class="timeline-content">

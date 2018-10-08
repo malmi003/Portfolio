@@ -145,7 +145,7 @@ class Background extends Component {
 <div class="main-timeline2 p-md-5">              
                     <TimecardHorizontal
                         time="2012"
-                        title="Embraced a herbivorous diet &amp; ran my first half marathon"
+                        title="Embraced a herbivorous lifestyle &amp; ran my first half marathon"
                         icon="fa-leaf"
                         imageSrc="../../images/personal/gimpBurger.jpg"
                         imageAlt="wild rice burger"
@@ -159,7 +159,7 @@ class Background extends Component {
                     />
                     <TimecardHorizontal
                         time="2014"
-                        title="Slept on top of a car while traveling the unforgettable Australian country side"
+                        title="Traveled the unforgettable Australian country side"
                         icon="fa-map-marked-alt"
                         imageSrc="../../images/personal/gimpTent.jpg"
                         imageAlt="car with rooftop tent next to water"
@@ -194,7 +194,7 @@ class Background extends Component {
                     />
                     <TimecardHorizontal
                         time="2019"
-                        title="Will run first full marathon and do some more exploring"
+                        title="Will run first full marathon and do some more exploring!"
                         icon="fa-medkit"
                         imageSrc="../../images/personal/gimpLogo.jpg"
                         imageAlt="Grandma's Marathon Logo"
