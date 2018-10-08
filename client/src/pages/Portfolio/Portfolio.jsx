@@ -17,7 +17,7 @@ class Portfolio extends Component {
                     </div>
                 </div>
                 <div className="row mx-auto">
-                    <div className="col-lg-10">
+                    <div className="col-lg-9">
                         <div className="row mx-auto pb-4">
                             <PortfolioCard 
                                 externalProjectLink="https://artspose.herokuapp.com/"
@@ -129,7 +129,7 @@ class Portfolio extends Component {
                             
                         </div>
                     </div>
-                    <div className="col-lg-2"><TechnologySideBar /></div>
+                    <div className="col-lg-3"><TechnologySideBar /></div>
                 </div>
 
                 
