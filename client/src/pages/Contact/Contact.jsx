@@ -68,7 +68,7 @@ class Contact extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-5 my-auto">
+                    <div className="col-md-6 my-auto">
                         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                             <h3 className="text-center">Send a Message</h3>
                             <div className="form-group">
@@ -115,7 +115,7 @@ class Contact extends Component {
                             {this.state.confirmationMessage}
                         </div>
                     </div>
-                    <div className="col-md-7" id="map-col">
+                    <div className="col-md-6 pb-3" id="map-col">
                             <iframe title="map" src={this.state.mapUrl} width="100%" height="600px" style={{ "border": "none" }} id="map"></iframe>
                     </div>
                 </div>

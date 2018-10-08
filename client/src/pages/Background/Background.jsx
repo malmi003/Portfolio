@@ -4,13 +4,13 @@ import React, { Component } from "react";
 import SkillPill from "../../components/SkillPill";
 import Timecard from "../../components/Timecard";
 
-class Resume extends Component {
+class Background extends Component {
     componentDidMount() {
         window.scrollTo(0, 0)
     }
     render() {
         return (
-            <article className="container-fluid" id="resume-body">
+            <article className="container-fluid" id="background-body">
             {/* <header class="jumbotron">
                 <div className="row pt-2">
                     <div className="col-md-4 text-center">
@@ -174,7 +174,7 @@ class Resume extends Component {
                             <Timecard
                                 year="2014"
                                 title="Victus Farms"
-                                description="Served as a 'Saturday crew' operative where I got hands on experience running an aquaponics/hydroponics facility"
+                                description="Served as a 'Saturday crew' operative where I got hands on experience running an aquaponics/hydroponics facility."
                             />
                             <Timecard
                                 year="2013"
@@ -234,4 +234,4 @@ class Resume extends Component {
     };
 };
 
-export default Resume;
+export default Background;

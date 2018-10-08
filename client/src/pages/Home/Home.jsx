@@ -14,9 +14,9 @@ class Home extends Component {
             <div id="home-container">
                 <Jumbotron />
                 <HomeSection
-                    sectionId="resume-section"
+                    sectionId="background-section"
                     btnClass="btn-light"
-                    link="/resume"
+                    link="/background"
                     btnName="Check out my background"
                 />
                 <section id="portfolio-section" className="row text-center">

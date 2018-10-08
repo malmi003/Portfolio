@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
-import Resume from "./pages/Resume";
+import Background from "./pages/Background";
 import Portfolio from "./pages/Portfolio";
 
 const App = () => (
@@ -17,7 +17,7 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/contact" component={Contact} />
-        <Route exact path="/background" component={Resume} />
+        <Route exact path="/background" component={Background} />
         <Route component={Home} />
       </Switch>
       <Footer />

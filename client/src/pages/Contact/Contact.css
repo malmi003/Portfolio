@@ -1,3 +1,9 @@
+/* Photo by Jeremy Bishop on Unsplash */
+#contact-body {
+    background: linear-gradient(0deg,rgba(253, 252, 250, .8), rgba(253, 252, 250, .8)), url("../../images/jeremy-bishop-282007-unsplash.jpg");
+    background-size: cover;
+  }
+
 @media (max-width: 768px) {
     #map-col {
     display: none;   

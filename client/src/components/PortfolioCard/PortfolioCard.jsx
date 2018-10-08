@@ -4,7 +4,7 @@ import "./PortfolioCard.css";
 export const PortfolioCard = props => (
     <div className="col-md-6" key={props.projectTitle}>
         <div className="cards-container">
-            <a href={props.externalProjectLink} title={props.projectTitle}>
+            <a href={props.externalProjectLink} title={props.projectTitle} target="_blank">
                 <div className="card text-center">
                     <img className="card-img-top image" src={props.imageSrc} alt={props.projectTitle} />
                     <div className="overlay">
@@ -18,7 +18,7 @@ export const PortfolioCard = props => (
             </a>
             <div className="card-body">
                 <a href={props.externalCodeLink} className="small btn btn-primary wiggle-btn" title={props.codeTitle}
-                    alt={props.codeTitle}>Check out the code</a>
+                    alt={props.codeTitle} target="_blank">Check out the code</a>
             </div>
         </div>
     </div>

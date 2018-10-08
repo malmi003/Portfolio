@@ -31,8 +31,7 @@ class Portfolio extends Component {
                                 externalProjectLink="https://malmi003.github.io/Space-Explorer-Javascript/"
                                 projectTitle="Space Explorer Math Game"
                                 imageSrc="./images/SpaceExplorer.jpg"
-                                externalCodeLink="https://github.com/malmi003/
-                                Space-Explorer-Javascript"
+                                externalCodeLink="https://github.com/malmi003/Space-Explorer-Javascript"
                                 codeTitle="Space Explorer Game Code"
                                 description="Explore the galaxy through numbers"
                             />
@@ -47,7 +46,7 @@ class Portfolio extends Component {
                                 description="This application uses the Pet Finder API to match perspective pet owners wih their ideal pet based on their survey results"
                             />
                             <PortfolioCard 
-                                externalProjectLink="https://jonopacich.github.io/CB-Project-1/main.html"
+                                externalProjectLink="https://session-a4950.firebaseapp.com/"
                                 projectTitle="Session Study App"
                                 imageSrc="./images/Session.jpg"
                                 externalCodeLink="https://github.com/JonOpacich/CB-Project-1"
