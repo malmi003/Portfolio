@@ -137,7 +137,7 @@ class Background extends Component {
     aria-controls="collapseExample"
     onClick={this.togglePersonalSection}
     >
-        {this.state.personalExpanded?<div><h3>See below</h3><p>click to collapse</p></div>:<div><h3>Want to see some personal accomplishments?</h3><p>click to expand</p></div>}
+        {this.state.personalExpanded?<div><h3>Check them out below</h3><p>click to collapse</p></div>:<div><h3>Want to see some personal accomplishments?</h3><p>click to expand</p></div>}
     
   </button>
 </p>
@@ -174,7 +174,7 @@ class Background extends Component {
                     <TimecardHorizontal
                         time="2016"
                         title="Became year-round cycle commuter &amp; adopted our first mutt"
-                        icon="fa-paw"
+                        icon="fa-bicycle"
                         imageSrc="../../images/personal/gimpDog.jpg"
                         imageAlt="dog laying on side"
                     />
@@ -194,7 +194,7 @@ class Background extends Component {
                     />
                     <TimecardHorizontal
                         time="2019"
-                        title="Will run first full marathon"
+                        title="Will run first full marathon!"
                         icon="fa-medkit"
                         imageSrc="../../images/personal/gimpLogo.jpg"
                         imageAlt="Grandma's Marathon Logo"
