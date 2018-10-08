@@ -13,4 +13,8 @@
     background:#649e95;
     box-shadow:0 0 1px 5px #649e95;
     box-shadow: 0 0 20px rgba(0,0,0,.2) inset;
+    
+}
+#other-skills-section ul {
+    padding-inline-start: 0px !important;
 }
