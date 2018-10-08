@@ -167,7 +167,7 @@ class Background extends Component {
                     <TimecardHorizontal
                         time="2015"
                         title="Married my best friend on a beautiful Duluth day"
-                        icon="fa-link"
+                        icon="fa-people-carry"
                         imageSrc="../../images/personal/gimpRings.jpg"
                         imageAlt="two wedding rings"
                     />
