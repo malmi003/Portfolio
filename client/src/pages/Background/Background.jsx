@@ -147,7 +147,7 @@ class Background extends Component {
                         time="2012"
                         title="Embraced a herbivorous lifestyle &amp; ran my first half marathon"
                         icon="fa-leaf"
-                        imageSrc="../../images/personal/gimpBurger.jpg"
+                        imageSrc="../../images/personal/gimpBurger1.jpg"
                         imageAlt="wild rice burger"
                     />
                      <TimecardHorizontal
@@ -182,7 +182,7 @@ class Background extends Component {
                         time="2017"
                         title="Built a convertible oak crib for my sister's first kid"
                         icon="fa-screwdriver"
-                        imageSrc="../../images/personal/gimpCrib.jpg"
+                        imageSrc="../../images/personal/gimpCrib1.jpg"
                         imageAlt="sideview of crib"
                     />
                     <TimecardHorizontal

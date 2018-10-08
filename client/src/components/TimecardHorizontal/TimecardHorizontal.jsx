@@ -9,7 +9,7 @@ const TimecardHorizontal = props => {
                 <div class="year">{props.time}</div>
                 <div class="timeline-content">
                     <div class="post">{props.title}</div>
-                    <img src={props.imageSrc} alt={props.imageAlt} width="200" />
+                    <img src={props.imageSrc} alt={props.imageAlt} />
                 </div>
                 <div class="timeline-icon">
                     <i class={"fa " + props.icon}></i>
