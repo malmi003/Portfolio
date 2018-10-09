@@ -27,19 +27,19 @@ class Background extends Component {
                         <p className="font-weight-bold text-center">Smart, Maintainable Code, Creative Problem Solver, Triple Bottom Line Vision</p>
                         <div className="main-timeline">
                             <Timecard
-                                year="2018"
-                                title="Full-Stack Web Development: University of Minnesota Twin Cities"
-                                description="Using a combination of individual and intensive teamwork, I absorbed the technologies needed to build thoughtful full stack web apps using the MVC framework and M.E.R.N stack"
-                            />
-                            <Timecard
-                                year="2018-curr."
+                                year="current"
                                 title="Zero Waste Events: Eureka Recycling"
                                 description="Working with an amazing group of zero-waste enthusiasts, we've been able to engage the public, promote self-efficacy, and divert an average of 94% of waste from local events around the metro!"
                             />
                             <Timecard
-                                year="2018-curr."
+                                year="current"
                                 title="Website Consultant"
-                                description="After volunteering with a husky rescue for a number of years, I partnered with their main trainer to bring their website up to snuff with their talents and vision via WordPress. Together we've been able to boost conversion rates significantly!"
+                                description="After volunteering with a husky rescue for a number of years, I partnered with their main trainer to bring her website up to snuff with her talents and vision via WordPress. Together we've been able to boost conversion rates significantly!"
+                            />
+                            <Timecard
+                                year="2018"
+                                title="Full-Stack Web Development: University of Minnesota Twin Cities"
+                                description="Using a combination of individual and intensive teamwork, I absorbed the technologies needed to build thoughtful full stack web apps using the MVC framework and M.E.R.N stack and quickly put them to work"
                             />
                             <Timecard
                                 year="2017-18"
@@ -54,7 +54,7 @@ class Background extends Component {
                             <Timecard
                                 year="2015"
                                 title="NRRI &amp; SOL Produce"
-                                description="Worked with some great cross-functional teams conducting a feasibility analysis for utilizing the NRRI roofs as part of larger stormwater
+                                description="Worked with some great cross-functional teams conducting a feasibility analysis for utilizing the NRRI roofs as part of their larger stormwater
                                 management strategies and got into some exciting start-up mischief with SOL Produce."
                             />
                             <Timecard
@@ -75,7 +75,7 @@ class Background extends Component {
                             <Timecard
                                 year="2013"
                                 title="A quick stint in NZ &amp; AUS"
-                                description="After spending 6 weeks backpacking around NZ, I completed an intense semester abroad in AUS soaking in the sun, gardens, and surrounding cultures."
+                                description="After spending 6 weeks backpacking around NZ, I completed an intense semester abroad in AUS soaking in the new perspective, gardens, and surrounding cultures."
                             />
                             <Timecard
                                 year="2011-15"
@@ -122,27 +122,22 @@ class Background extends Component {
                     />
                     </div>
                 </section>
-                <h3 className="text-center py-3 my-5">
-                    <a href="./images/Resume-AmandaMalmin.pdf" download>Downloadable Resume here</a>
-                </h3>
+                
                 <section class="row pt-5 justify-content-center">
-                <p>
- 
-  <button 
-    class="btn btn-darker" 
-    type="button" 
-    data-toggle="collapse" 
-    data-target="#personal-timecards" 
-    aria-expanded="false" 
-    aria-controls="collapseExample"
-    onClick={this.togglePersonalSection}
-    >
-        {this.state.personalExpanded?<div><h3>Check them out below</h3><p>click to collapse</p></div>:<div><h3>Want to see some personal accomplishments?</h3><p>click to expand</p></div>}
+                <button 
+                    class="btn btn-darker" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#personal-timecards" 
+                    aria-expanded="false" 
+                    aria-controls="collapseExample"
+                    onClick={this.togglePersonalSection}
+                    >
+                    {this.state.personalExpanded?<div><h3>Check them out below</h3><p>click to collapse</p></div>:<div><h3>Want to see some personal accomplishments?</h3><p>click to expand</p></div>}
     
-  </button>
-</p>
-<div class="collapse" id="personal-timecards">
-<div class="main-timeline2 p-md-5">              
+                </button>
+                <div class="collapse" id="personal-timecards">
+                <div class="main-timeline2 p-md-5">              
                     <TimecardHorizontal
                         time="2012"
                         title="Embraced a herbivorous lifestyle &amp; ran my first half marathon"
@@ -173,7 +168,7 @@ class Background extends Component {
                     />
                     <TimecardHorizontal
                         time="2016"
-                        title="Became year-round cycle commuter &amp; adopted our first mutt"
+                        title="Became a year-round cycle commuter &amp; adopted our first mutt"
                         icon="fa-bicycle"
                         imageSrc="../../images/personal/gimpDog.jpg"
                         imageAlt="dog laying on side"
@@ -194,15 +189,17 @@ class Background extends Component {
                     />
                     <TimecardHorizontal
                         time="2019"
-                        title="Will run first full marathon and do some more exploring!"
+                        title="Will run first full marathon and spend at least 20 nights in a tent!"
                         icon="fa-medkit"
                         imageSrc="../../images/personal/gimpLogo.jpg"
                         imageAlt="Grandma's Marathon Logo"
                     />
                     </div>
-</div>
-                    
+                    </div>
                 </section>
+                <h3 className="text-center py-3 my-5">
+                    <a href="./images/Resume-AmandaMalmin.pdf" download>Downloadable Resume here</a>
+                </h3>
             </article >
         );
     };
