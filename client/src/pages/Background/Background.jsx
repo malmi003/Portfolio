@@ -54,28 +54,28 @@ class Background extends Component {
                             <Timecard
                                 year="2015"
                                 title="NRRI &amp; SOL Produce"
-                                description="Worked with some great cross-functional teams conducting a feasibility analysis for utilizing the NRRI roofs as part of their larger stormwater
+                                description="Interned with some great cross-functional teams conducting a feasibility analysis for utilizing the NRRI roofs as part of their larger stormwater
                                 management strategies and got into some exciting start-up mischief with SOL Produce."
                             />
                             <Timecard
                                 year="2015"
                                 title="Graduation"
-                                description="I was lucky enough to receive many honors for my time at UMD including Summa Cum Laude, the Labovitz School of Business &amp; Economics Award for Academic Excellence in B.A., the Academic Excellence Award for Org. Management, and more!"
+                                description="I was honored to receive many awards for my time at UMD including Summa Cum Laude, the Labovitz School of Business &amp; Economics Award for Academic Excellence in B.A., the Academic Excellence Award for Org. Management, and more!"
                             />
                             <Timecard
                                 year="2014-16"
                                 title="Office Manager: Doucette's Special Events Rental"
-                                description="My time with Doucette's was filled with great challenges and laughs. While there, I worked on many projects outside of running the day-day office operations including creating an extensive training resource collection."
+                                description="My time with Doucette's was filled with great challenges and laughs. While there, I worked on many projects outside of running the day-to-day office operations including creating an extensive training resource collection."
                             />
                             <Timecard
                                 year="2014"
                                 title="Victus Farms"
-                                description="Served as a 'Saturday crew' operative where I got hands on experience running an aquaponics/hydroponics facility."
+                                description="Served as a 'Saturday crew' operative &amp; intern where I got hands on experience running an aquaponics/hydroponics facility."
                             />
                             <Timecard
-                                year="2013"
+                                year="2013-14"
                                 title="A quick stint in NZ &amp; AUS"
-                                description="After spending 6 weeks backpacking around NZ, I completed an intense semester abroad in AUS soaking in the new perspective, gardens, and surrounding cultures."
+                                description="After spending 6 weeks backpacking around New Zealand, I completed an intense semester abroad in Australia soaking in the new perspective, gardens, and surrounding cultures."
                             />
                             <Timecard
                                 year="2011-15"
@@ -88,7 +88,7 @@ class Background extends Component {
                     <SkillPill
                         skills={[
                             "SWAT Analysis",
-                            "Adaptability",
+                            "Forecasting",
                             "Diverse Team Management",
                             "Performance Under Pressure",
                             "R&D",
@@ -96,6 +96,7 @@ class Background extends Component {
                             "HR Management",
                             "Team Building",
                             "Dedication",
+                            "Adaptability",
                             "Analytics",
                             "Customer Service",
                             "Communication",
@@ -138,47 +139,12 @@ class Background extends Component {
                 </button>
                 <div class="collapse" id="personal-timecards">
                 <div class="main-timeline2 p-md-5">              
-                    <TimecardHorizontal
-                        time="2012"
-                        title="Embraced a herbivorous lifestyle &amp; ran my first half marathon"
-                        icon="fa-leaf"
-                        imageSrc="../../images/personal/gimpBurger1.jpg"
-                        imageAlt="wild rice burger"
-                    />
-                     <TimecardHorizontal
-                        time="2013"
-                        title="Threw a ring into Mount Doom and explored the cheeky kiwi culture"
-                        icon="fa-kiwi-bird"
-                        imageSrc="../../images/personal/gimpDoom.jpg"
-                        imageAlt="sideview of Mt Doom"
-                    />
-                    <TimecardHorizontal
-                        time="2014"
-                        title="Traveled the unforgettable Australian country side"
-                        icon="fa-map-marked-alt"
-                        imageSrc="../../images/personal/gimpTent.jpg"
-                        imageAlt="car with rooftop tent next to water"
-                    />
-                    <TimecardHorizontal
-                        time="2015"
-                        title="Married my best friend on a beautiful Duluth day"
-                        icon="fa-people-carry"
-                        imageSrc="../../images/personal/gimpRings.jpg"
-                        imageAlt="two wedding rings"
-                    />
-                    <TimecardHorizontal
-                        time="2016"
-                        title="Became a year-round cycle commuter &amp; adopted our first mutt"
-                        icon="fa-bicycle"
-                        imageSrc="../../images/personal/gimpDog.jpg"
-                        imageAlt="dog laying on side"
-                    />
-                    <TimecardHorizontal
-                        time="2017"
-                        title="Built a convertible oak crib for my sister's first kid"
-                        icon="fa-screwdriver"
-                        imageSrc="../../images/personal/gimpCrib1.jpg"
-                        imageAlt="sideview of crib"
+                <TimecardHorizontal
+                        time="2019"
+                        title="Will run first full marathon and spend at least 20 nights in a tent!"
+                        icon="fa-medkit"
+                        imageSrc="../../images/personal/gimpLogo.jpg"
+                        imageAlt="Grandma's Marathon Logo"
                     />
                     <TimecardHorizontal
                         time="2018"
@@ -188,12 +154,47 @@ class Background extends Component {
                         imageAlt="SHT"
                     />
                     <TimecardHorizontal
-                        time="2019"
-                        title="Will run first full marathon and spend at least 20 nights in a tent!"
-                        icon="fa-medkit"
-                        imageSrc="../../images/personal/gimpLogo.jpg"
-                        imageAlt="Grandma's Marathon Logo"
+                        time="2017"
+                        title="Built a convertible oak crib for my sister's first kid"
+                        icon="fa-screwdriver"
+                        imageSrc="../../images/personal/gimpCrib1.jpg"
+                        imageAlt="sideview of crib"
                     />
+                    <TimecardHorizontal
+                        time="2016"
+                        title="Became a year-round cycle commuter &amp; adopted our first mutt"
+                        icon="fa-bicycle"
+                        imageSrc="../../images/personal/gimpDog.jpg"
+                        imageAlt="dog laying on side"
+                    />
+                    <TimecardHorizontal
+                        time="2015"
+                        title="Married my best friend on a beautiful Duluth day"
+                        icon="fa-people-carry"
+                        imageSrc="../../images/personal/gimpRings.jpg"
+                        imageAlt="two wedding rings"
+                    />
+                    <TimecardHorizontal
+                        time="2014"
+                        title="Traveled the unforgettable Australian country side"
+                        icon="fa-map-marked-alt"
+                        imageSrc="../../images/personal/gimpTent.jpg"
+                        imageAlt="car with rooftop tent next to water"
+                    />
+                    <TimecardHorizontal
+                        time="2013"
+                        title="Threw a ring into Mount Doom and explored the cheeky kiwi culture"
+                        icon="fa-kiwi-bird"
+                        imageSrc="../../images/personal/gimpDoom.jpg"
+                        imageAlt="sideview of Mt Doom"
+                    />
+                    <TimecardHorizontal
+                        time="2012"
+                        title="Embraced a herbivorous lifestyle &amp; ran my first half marathon"
+                        icon="fa-leaf"
+                        imageSrc="../../images/personal/gimpBurger1.jpg"
+                        imageAlt="wild rice burger"
+                    /> 
                     </div>
                     </div>
                 </section>

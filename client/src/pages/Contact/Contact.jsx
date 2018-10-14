@@ -74,7 +74,7 @@ class Contact extends Component {
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
                                 <input
-                                    type="name" className="form-control border border-secondary" id="name" placeholder="Joanna Smith"
+                                    type="name" className="form-control border border-secondary" id="name" placeholder=""
                                     name="name"
                                     onChange={this.handleInputChange}
                                     value={this.state.name}
@@ -83,7 +83,7 @@ class Contact extends Component {
                             <div className="form-group">
                                 <label htmlFor="email">Email address</label>
                                 <input
-                                    type="email" className="form-control border border-secondary" id="email" aria-describedby="emailHelp" placeholder="example@email.com"
+                                    type="email" className="form-control border border-secondary" id="email" aria-describedby="emailHelp" placeholder=""
                                     name="email"
                                     onChange={this.handleInputChange}
                                     value={this.state.email}
